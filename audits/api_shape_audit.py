@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """api_shape_audit.py — public-API signature-shape report + fail-on-new
-gate for the memory_resource placement rule across `modules/*`.
+gate for the keel::Allocator placement rule across `modules/*`.
 """
 
 from __future__ import annotations
@@ -38,7 +38,7 @@ PUBLIC_GLOBS = [
 ]
 
 DECL_RE = re.compile(r"^[ \t]*(?:[\w:<>,&* ]+?\s+)?(\w+)\s*\(", re.M)
-MR_RE = re.compile(r"std::pmr::memory_resource\s*\*\s*(\w+)")
+MR_RE = re.compile(r"(?:keel::)?Allocator\s*\*\s*(\w*)")
 SKIP_PREFIXES = ("using ", "typedef ", "#", "friend ", "static_assert")
 SKIP_NAMES = {"operator", "sizeof", "if", "for", "while", "switch",
               "return", "catch"}
