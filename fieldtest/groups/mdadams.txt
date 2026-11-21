@@ -45,7 +45,7 @@ corpus/work/mdadams--sigsysbook_companion/slides/matlab/signal_processing/freqs_
 corpus/work/mdadams--sigsysbook_companion/slides/matlab/signal_processing/freqz_example_1.m
 corpus/work/mdadams--sigsysbook_companion/slides/matlab/signal_processing/my_freqs_example_1.m
 corpus/work/mdadams--sigsysbook_companion/slides/matlab/symbolic_computation/differentiation_1.m    # known: missing: syms (bugs/missing.md)
-corpus/work/mdadams--sigsysbook_companion/slides/matlab/symbolic_computation/ezplot_example_1.m    # known: missing: syms (bugs/missing.md)
+corpus/work/mdadams--sigsysbook_companion/slides/matlab/symbolic_computation/ezplot_example_1.m
 corpus/work/mdadams--sigsysbook_companion/slides/matlab/symbolic_computation/integration_1.m    # known: missing: syms (bugs/missing.md)
 corpus/work/mdadams--sigsysbook_companion/slides/matlab/symbolic_computation/iult_1.m    # known: missing: syms (bugs/missing.md)
 corpus/work/mdadams--sigsysbook_companion/slides/matlab/symbolic_computation/ult_1.m    # known: missing: syms (bugs/missing.md)
