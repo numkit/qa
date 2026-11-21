@@ -98,7 +98,7 @@ def main():
 
     def _run_entry(item):
         i, (rel, known) = item
-        s = HERE / rel
+        s = H._resolve_script(rel)
         if not s.exists():
             return i, rel, known, None, None, None
         v, detail, lines = verdict_of(s)
