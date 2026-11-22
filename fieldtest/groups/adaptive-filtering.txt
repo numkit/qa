@@ -43,6 +43,6 @@ corpus/work/StevenShuoFeng--Adaptive-Filtering/Set-membership_Algorithms/example
 corpus/work/StevenShuoFeng--Adaptive-Filtering/Set-membership_Algorithms/example_systemID_SM_AP.m
 corpus/work/StevenShuoFeng--Adaptive-Filtering/Set-membership_Algorithms/example_systemID_SM_BNLMS.m  # known: Set-membership threshold boundary sensitivity to floating-point rounding
 corpus/work/StevenShuoFeng--Adaptive-Filtering/Set-membership_Algorithms/example_systemID_SM_NLMS.m
-corpus/work/StevenShuoFeng--Adaptive-Filtering/Subband_Adaptive_Filters/cfdlms.m  # known: fir1/qmf filter design minor difference
+corpus/work/StevenShuoFeng--Adaptive-Filtering/Subband_Adaptive_Filters/cfdlms.m  # known: rng-stream (unseeded randn/rand inside Monte Carlo loop)
 corpus/work/StevenShuoFeng--Adaptive-Filtering/Subband_Adaptive_Filters/dlcllms.m
 corpus/work/StevenShuoFeng--Adaptive-Filtering/Subband_Adaptive_Filters/olsblms.m
