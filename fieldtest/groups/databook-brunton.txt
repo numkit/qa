@@ -11,9 +11,9 @@ corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC04_2_Cement.m  # known: ru
 corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC05_1_PCAGaussian.m  # known: eig-sign (SVD singular vector +/-1 sign ambiguity)
 corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC07_1_Truncation.m
 corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC07_1_production.m
-corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC07_2_Truncation.m  # known: keel-rank1-svd-slow (imrotate bicubic matches to 12 digits; svd on 1000x1000 rank-1 matrix in external keel::linalg::svd_full exceeds 15s timeout)
-corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC07_2_production.m  # known: keel-rank1-svd-slow (imrotate bicubic matches to 12 digits; svd on 1000x1000 rank-1 matrix in external keel::linalg::svd_full exceeds 15s timeout)
-corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC07_3_production.m  # known: keel-rank1-svd-slow (svd on 500x500 rank-1 matrix in external keel::linalg::svd_full exceeds 15s timeout)
+corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC07_2_Truncation.m
+corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC07_2_production.m  # known: eig-sign (SVD singular vector +/-1 sign ambiguity; S matches)
+corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC07_3_production.m
 corpus/work/dynamicslab--databook_matlab/CH02/CH02_SEC01_1_FourierSines.m
 corpus/work/dynamicslab--databook_matlab/CH02/CH02_SEC01_2_Gibbs.m
 corpus/work/dynamicslab--databook_matlab/CH02/CH02_SEC01_2_Gibbs_Movie.m

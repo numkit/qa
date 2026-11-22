@@ -12,7 +12,7 @@ corpus/work/Apress--cryptography-cryptanalysis-matlab/Ch13 - Chaos-based Cryptog
 corpus/work/Apress--cryptography-cryptanalysis-matlab/Ch13 - Chaos-based Cryptography/Listing13_4.m  # known: jpeg-idct-1lsb (baseline JPEG IDCT rounding +/-1 LSB on 1.4% of pixels vs libjpeg)
 corpus/work/Apress--cryptography-cryptanalysis-matlab/Ch13 - Chaos-based Cryptography/Listing13_5.m  # known: jpeg-idct-1lsb (baseline JPEG IDCT rounding +/-1 LSB on 1.4% of pixels vs libjpeg)
 corpus/work/Apress--cryptography-cryptanalysis-matlab/Ch13 - Chaos-based Cryptography/Listing13_6.m  # known: jpeg-idct-1lsb (baseline JPEG IDCT rounding +/-1 LSB on 1.4% of pixels vs libjpeg)
-corpus/work/Apress--cryptography-cryptanalysis-matlab/Ch14 - Steganography/Listing14_2.m  # known: keel-progressive-jpeg (swan_input.jpg is SOF2 progressive JPEG; keel::imagefile decodes baseline SOF0 only)
+corpus/work/Apress--cryptography-cryptanalysis-matlab/Ch14 - Steganography/Listing14_2.m
 corpus/work/Apress--cryptography-cryptanalysis-matlab/Ch7 - Pseudo-Random Numbers Generators/Listing7_2.m
 corpus/work/Apress--cryptography-cryptanalysis-matlab/Ch7 - Pseudo-Random Numbers Generators/Listing7_3.m
 corpus/work/Apress--cryptography-cryptanalysis-matlab/Ch7 - Pseudo-Random Numbers Generators/Listing7_4.m
