@@ -8,7 +8,7 @@
 corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC03_Rotation.m
 corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC03_Rotation_production.m
 corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC04_2_Cement.m  # known: runtime-error: Error: line 3, column 1: load: cannot open 'C:\Users\User\Projects\numkit\bundle\fieldtest
-corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC05_1_PCAGaussian.m  # known: workspace-mismatch: DIFF U: values diverge (max rel 2.000e+00); DIFF V: values diverge (max rel 2.000e+00); DI
+corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC05_1_PCAGaussian.m  # known: eig-sign (SVD singular vector +/-1 sign ambiguity)
 corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC07_1_Truncation.m
 corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC07_1_production.m
 corpus/work/dynamicslab--databook_matlab/CH01/CH01_SEC07_2_Truncation.m  # known: workspace-mismatch: DIFF S: values diverge (max rel 1.000e+00); DIFF U: values diverge (max rel 2.000e+00); DI
@@ -22,5 +22,5 @@ corpus/work/dynamicslab--databook_matlab/CH02/CH02_SEC02_1_DFT.m
 corpus/work/dynamicslab--databook_matlab/CH02/CH02_SEC02_1_DFT_production.m
 corpus/work/dynamicslab--databook_matlab/CH02/CH02_SEC02_2_Denoise.m
 corpus/work/dynamicslab--databook_matlab/CH02/CH02_SEC02_3_SpectralDerivative.m
-corpus/work/dynamicslab--databook_matlab/CH02/CH02_SEC03_1_FFTHeat.m  # known: runtime-error: Error: line 140, column 65: ode45: step size underflow (in call to 'error') [numkit:ode45:
-corpus/work/dynamicslab--databook_matlab/CH02/CH02_SEC03_1_FFTHeat_production.m  # known: runtime-error: Error: line 140, column 65: ode45: step size underflow (in call to 'error') [numkit:ode45:
+corpus/work/dynamicslab--databook_matlab/CH02/CH02_SEC03_1_FFTHeat.m  # known: ode45-adaptive-steps (complex ode45 matches bulk u to 3.4e-8 max abs; decayed high-k modes below AbsTol=1e-6 differ)
+corpus/work/dynamicslab--databook_matlab/CH02/CH02_SEC03_1_FFTHeat_production.m  # known: ode45-adaptive-steps (complex ode45 matches bulk u to 3.4e-8 max abs; decayed high-k modes below AbsTol=1e-6 differ)
