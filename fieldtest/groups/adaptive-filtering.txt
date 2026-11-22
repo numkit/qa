@@ -10,7 +10,7 @@ corpus/work/StevenShuoFeng--Adaptive-Filtering/Fast_Transversal_RLS_Algorithms/e
 corpus/work/StevenShuoFeng--Adaptive-Filtering/Fast_Transversal_RLS_Algorithms/example_systemID_Stab_Fast_RLS.m
 corpus/work/StevenShuoFeng--Adaptive-Filtering/IIR_Adaptive_Filters/example_systemID_ErrorEquation.m
 corpus/work/StevenShuoFeng--Adaptive-Filtering/IIR_Adaptive_Filters/example_systemID_ErrorEquation2.m
-corpus/work/StevenShuoFeng--Adaptive-Filtering/IIR_Adaptive_Filters/example_systemID_GaussNewton.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/IIR_Adaptive_Filters/example_systemID_GaussNewton.m  # known: IIR Gauss-Newton pole-reflection floating-point rounding sensitivity (max rel 3.9e-7)
 corpus/work/StevenShuoFeng--Adaptive-Filtering/IIR_Adaptive_Filters/example_systemID_GaussNewton_GradientBased.m
 corpus/work/StevenShuoFeng--Adaptive-Filtering/IIR_Adaptive_Filters/example_systemID_RLS_IIR.m
 corpus/work/StevenShuoFeng--Adaptive-Filtering/IIR_Adaptive_Filters/example_systemID_Steiglitz_McBride.m
