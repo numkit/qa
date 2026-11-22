@@ -37,15 +37,15 @@ corpus/work/mdadams--sigsysbook_companion/slides/matlab/examples/example_2.m
 corpus/work/mdadams--sigsysbook_companion/slides/matlab/examples/example_3.m
 corpus/work/mdadams--sigsysbook_companion/slides/matlab/examples/example_4.m
 corpus/work/mdadams--sigsysbook_companion/slides/matlab/examples/example_5.m
-corpus/work/mdadams--sigsysbook_companion/slides/matlab/examples/example_6.m    # known: missing: syms (bugs/missing.md)
-corpus/work/mdadams--sigsysbook_companion/slides/matlab/examples/example_7.m    # known: missing: syms (bugs/missing.md)
+corpus/work/mdadams--sigsysbook_companion/slides/matlab/examples/example_6.m    # known: sym-rel-print (diff(y(t), t, 2) vs diff(y(t), t, t))
+corpus/work/mdadams--sigsysbook_companion/slides/matlab/examples/example_7.m
 corpus/work/mdadams--sigsysbook_companion/slides/matlab/examples/example_8.m    # known: missing: demo-datasets (peppers.png)
 corpus/work/mdadams--sigsysbook_companion/slides/matlab/examples/example_9.m
 corpus/work/mdadams--sigsysbook_companion/slides/matlab/signal_processing/freqs_example_1.m
 corpus/work/mdadams--sigsysbook_companion/slides/matlab/signal_processing/freqz_example_1.m
 corpus/work/mdadams--sigsysbook_companion/slides/matlab/signal_processing/my_freqs_example_1.m
-corpus/work/mdadams--sigsysbook_companion/slides/matlab/symbolic_computation/differentiation_1.m    # known: missing: syms (bugs/missing.md)
+corpus/work/mdadams--sigsysbook_companion/slides/matlab/symbolic_computation/differentiation_1.m
 corpus/work/mdadams--sigsysbook_companion/slides/matlab/symbolic_computation/ezplot_example_1.m
-corpus/work/mdadams--sigsysbook_companion/slides/matlab/symbolic_computation/integration_1.m    # known: missing: syms (bugs/missing.md)
-corpus/work/mdadams--sigsysbook_companion/slides/matlab/symbolic_computation/iult_1.m    # known: missing: syms (bugs/missing.md)
-corpus/work/mdadams--sigsysbook_companion/slides/matlab/symbolic_computation/ult_1.m    # known: missing: syms (bugs/missing.md)
+corpus/work/mdadams--sigsysbook_companion/slides/matlab/symbolic_computation/integration_1.m
+corpus/work/mdadams--sigsysbook_companion/slides/matlab/symbolic_computation/iult_1.m
+corpus/work/mdadams--sigsysbook_companion/slides/matlab/symbolic_computation/ult_1.m

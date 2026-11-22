@@ -2,7 +2,7 @@
 
 - **Module:** `cas`
 - **Class:** `workspace-mismatch` / `runtime-error`
-- **Status:** open
+- **Status:** closed
 - **Date:** 2026-11-22
 
 ## Repro

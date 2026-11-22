@@ -2,7 +2,7 @@
 
 - **Module:** `control`
 - **Class:** `runtime-error`
-- **Status:** open
+- **Status:** closed
 - **Date:** 2026-11-22
 
 ## Repro

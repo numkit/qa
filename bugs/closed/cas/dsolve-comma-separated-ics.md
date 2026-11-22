@@ -2,7 +2,7 @@
 
 - **Module:** `cas`
 - **Class:** `parse-error`
-- **Status:** open
+- **Status:** closed
 - **Date:** 2026-11-22
 
 ## Repro

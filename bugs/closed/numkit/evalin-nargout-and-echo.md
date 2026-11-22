@@ -2,7 +2,7 @@
 
 - **Module:** `numkit`
 - **Class:** `runtime-error` / `workspace-mismatch`
-- **Status:** open
+- **Status:** closed
 - **Date:** 2026-11-22
 
 ## Repro
