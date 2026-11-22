@@ -8,9 +8,9 @@ corpus/work/cybergalactic--MSS/CRAFT/SHIP/models/shipModels/dataContainer.m
 corpus/work/cybergalactic--MSS/CRAFT/SHIP/models/shipModels/dataPretoria.m
 corpus/work/cybergalactic--MSS/CRAFT/SHIP/models/shipModels/dataSpirit.m
 corpus/work/cybergalactic--MSS/GNC/utils/conversion.m
-corpus/work/cybergalactic--MSS/HYDRO/vessels_wamit/fpso/config_parameters.m
-corpus/work/cybergalactic--MSS/HYDRO/vessels_wamit/semisub/config_parameters.m
-corpus/work/cybergalactic--MSS/HYDRO/vessels_wamit/tanker/config_parameters.m
+corpus/work/cybergalactic--MSS/HYDRO/vessels_wamit/fpso_wamitData/config_parameters.m
+corpus/work/cybergalactic--MSS/HYDRO/vessels_wamit/semisub_wamitData/config_parameters.m
+corpus/work/cybergalactic--MSS/HYDRO/vessels_wamit/tanker_wamitData/config_parameters.m
 corpus/work/cybergalactic--MSS/INS/SIMquatMEKF.m
 corpus/work/cybergalactic--MSS/INS/SIMquatObserver.m
 corpus/work/cybergalactic--MSS/mssDemos/WaveDemo.m
@@ -37,14 +37,14 @@ corpus/work/cybergalactic--MSS/mssExamples/exMDS.m
 corpus/work/cybergalactic--MSS/mssExamples/exMSI.m
 corpus/work/cybergalactic--MSS/mssExamples/exNomoto.m
 corpus/work/cybergalactic--MSS/mssExamples/exObsCtr.m
-corpus/work/cybergalactic--MSS/mssExamples/exOtter.m  # known: missing:x_prd
+corpus/work/cybergalactic--MSS/GNC/obsolete/exOtter.m  # known: missing:x_prd
 corpus/work/cybergalactic--MSS/mssExamples/exPlotGM.m
 corpus/work/cybergalactic--MSS/mssExamples/exQuadProg.m
 corpus/work/cybergalactic--MSS/mssExamples/exQuest.m
 corpus/work/cybergalactic--MSS/mssExamples/exRefMod.m
 corpus/work/cybergalactic--MSS/mssExamples/exResonance.m
 corpus/work/cybergalactic--MSS/mssExamples/exRRD1.m
-corpus/work/cybergalactic--MSS/mssExamples/exRRD2.m
+corpus/work/cybergalactic--MSS/mssExamples/exRRD2.m  # known: both-error (upstream: undefined constant in RRDcontainer)
 corpus/work/cybergalactic--MSS/mssExamples/exRRD3.m
 corpus/work/cybergalactic--MSS/mssExamples/exShipHydrostatics.m
 corpus/work/cybergalactic--MSS/mssExamples/exSMC.m
@@ -53,5 +53,3 @@ corpus/work/cybergalactic--MSS/mssExamples/exWageningen.m
 corpus/work/cybergalactic--MSS/mssExamples/exWaveFreqObserver.m
 corpus/work/cybergalactic--MSS/mssExamples/exWindForce.m
 corpus/work/cybergalactic--MSS/mssHelp.m
-corpus/work/cybergalactic--MSS/SIMULINK/init/initCS2.m
-corpus/work/cybergalactic--MSS/SIMULINK/init/initIsherwood72.m
