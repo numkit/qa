@@ -24,11 +24,11 @@ corpus/work/Apress--matlab-machine-learning-recipes/Chapter_05/RecursiveLearning
 corpus/work/Apress--matlab-machine-learning-recipes/Chapter_05/RotorSim.m
 corpus/work/Apress--matlab-machine-learning-recipes/Chapter_05/Sigmoid.m
 corpus/work/Apress--matlab-machine-learning-recipes/Chapter_05/SpacecraftSim.m
-corpus/work/Apress--matlab-machine-learning-recipes/Chapter_05/TuningSim.m  # known: workspace-mismatch: skip dRHS: non-numeric both sides; skip tL: non-numeric both sides; DIFF x: values diverge
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_05/TuningSim.m
 corpus/work/Apress--matlab-machine-learning-recipes/Chapter_06/MFDemo.m
-corpus/work/Apress--matlab-machine-learning-recipes/Chapter_07/SimpleClassifierDemo.m  # known: runtime-error: 
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_07/SimpleClassifierDemo.m
 corpus/work/Apress--matlab-machine-learning-recipes/Chapter_07/SimpleClassifierExample.m
-corpus/work/Apress--matlab-machine-learning-recipes/Chapter_07/TestDecisionTree.m  # known: runtime-error: Error: line 1, column 29: Unsupported unary - (in call to 'run') [numkit:uminus:unsupporte
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_07/TestDecisionTree.m
 corpus/work/Apress--matlab-machine-learning-recipes/Chapter_08/NNPendulumDemo.m
 corpus/work/Apress--matlab-machine-learning-recipes/Chapter_08/NNPendulumDemoLinear.m
 corpus/work/Apress--matlab-machine-learning-recipes/Chapter_08/OneNeuron.m
@@ -39,6 +39,6 @@ corpus/work/Apress--matlab-machine-learning-recipes/Chapter_10/TestNN.m  # known
 corpus/work/Apress--matlab-machine-learning-recipes/Chapter_10/TrainNN.m  # known: missing: image (bugs/missing.md)
 corpus/work/Apress--matlab-machine-learning-recipes/Chapter_12/KF1DDemo.m
 corpus/work/Apress--matlab-machine-learning-recipes/Chapter_12/KFBilliardsDemo.m
-corpus/work/Apress--matlab-machine-learning-recipes/Chapter_13/AutomobileDemo.m  # known: runtime-error: Error: line 36, column 16: Dot indexing requires a struct (in field access '.component')
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_13/AutomobileDemo.m
 corpus/work/Apress--matlab-machine-learning-recipes/Chapter_13/UKFAutomobileDemo.m  # known: workspace-mismatch: skip d: non-numeric both sides; DIFF dMHTU: values diverge (max rel 1.470e-02); skip dRada
 corpus/work/Apress--matlab-machine-learning-recipes/Chapter_14/ExpertSystemDemo.m

@@ -8,8 +8,8 @@ corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/MIMO_channel_c
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/MIMO_channel_cap_ant_sel_subopt.m
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/OL_CL_Comparison.m
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/PAPR_of_Chu.m
-corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/PAPR_of_preamble.m
-corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/PARR_of_preamble.m
+corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/PAPR_of_preamble.m  # known: both-error (Windows backslash path)
+corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/PARR_of_preamble.m  # known: both-error (Windows backslash path)
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_FWGN.m  # known: workspace-mismatch (ill-conditioned polyfit RCOND=1.2e-18)
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_IEEE80211_model.m
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_Jakes_model.m
