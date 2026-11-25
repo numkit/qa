@@ -8,6 +8,6 @@ corpus/work/probml--pmtk3/demos/cubicPlot.m
 corpus/work/probml--pmtk3/demos/gibbsGaussDemo.m
 corpus/work/probml--pmtk3/demos/kalman_test.m
 corpus/work/probml--pmtk3/demos/laplacianEigenmapsSwissRoll.m
-corpus/work/probml--pmtk3/demos/lsiCode.m    # known: absent-fn: Error: line 10, column 34: VM: undefined function 'textread' (in call to 'textread')
+corpus/work/probml--pmtk3/demos/lsiCode.m    # known: workspace-mismatch: svd sign flip on qhat (max rel 2.000e+00; angle/ndx/top3 match); graphics handle h numeric in nk
 corpus/work/probml--pmtk3/demos/robustPriorDemo.m    # known: quad-1e-6-tol (runs cleanly; Z differs by 5.26e-6 due to legacy Simpson quad tol vs integral)
 corpus/work/probml--pmtk3/demos/tabularFactorTest.m
