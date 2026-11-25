@@ -8,7 +8,7 @@ corpus/work/PacktPublishing--MATLAB-for-Machine-Learning/Chapter05/DiscriminantA
 corpus/work/PacktPublishing--MATLAB-for-Machine-Learning/Chapter05/NearestNeighborCassifiers.m    # known: runtime-error: Error: line 1, column 1: load: cannot open 'C:\Users\User\Projects\numkit\bundle\fieldtest\corpus\wo
 corpus/work/PacktPublishing--MATLAB-for-Machine-Learning/Chapter06/GaussianMixtureModels.m    # known: runtime-error: Error: line 2, column 17: Index exceeds array dimensions (in function call)
 corpus/work/PacktPublishing--MATLAB-for-Machine-Learning/Chapter06/HierarchicalClustering.m    # known: workspace-mismatch: DIFF NewGroupsMatrix: values diverge (max rel 1.000e+00)
-corpus/work/PacktPublishing--MATLAB-for-Machine-Learning/Chapter06/KMeansExample.m    # known: runtime-error: Error: line 2, column 26: Index exceeds array dimensions (in function call)
+corpus/work/PacktPublishing--MATLAB-for-Machine-Learning/Chapter06/KMeansExample.m
 corpus/work/PacktPublishing--MATLAB-for-Machine-Learning/Chapter07/EngineFitting.m    # known: runtime-error: Error: line 1, column 1: load: cannot open 'C:\Users\User\Projects\numkit\bundle\fieldtest\corpus\wo
 corpus/work/PacktPublishing--MATLAB-for-Machine-Learning/Chapter08/StepwiseRegression.m    # known: absent-fn: Error: line 2, column 35: VM: undefined function 'websave' (in call to 'websave')
 corpus/work/PacktPublishing--MATLAB-for-Machine-Learning/Chapter09/ConcreteQualityFitting.m    # known: absent-fn: Error: line 10, column 30: VM: undefined function 'fitnet' (in call to 'fitnet')

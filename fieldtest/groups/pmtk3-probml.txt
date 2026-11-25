@@ -4,7 +4,7 @@
 
 corpus/work/probml--pmtk3/data/autompg/autompgMakeData.m
 corpus/work/probml--pmtk3/data/bayesFactorGeneData/bayesFactorMakeGeneData.m
-corpus/work/probml--pmtk3/data/facesCBCL/facesCBCLshow.m    # known: absent-fn: Error: line 3, column 44: VM: undefined function 'montage' (in call to 'montage')
+corpus/work/probml--pmtk3/data/facesCBCL/facesCBCLshow.m
 corpus/work/probml--pmtk3/data/houseVotesParse.m
 corpus/work/probml--pmtk3/data/housing/housingDataMake.m
 corpus/work/probml--pmtk3/data/moteData/moteDataMake.m
