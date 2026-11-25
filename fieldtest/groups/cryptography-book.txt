@@ -17,4 +17,4 @@ corpus/work/Apress--cryptography-cryptanalysis-matlab/Ch7 - Pseudo-Random Number
 corpus/work/Apress--cryptography-cryptanalysis-matlab/Ch7 - Pseudo-Random Numbers Generators/Listing7_3.m
 corpus/work/Apress--cryptography-cryptanalysis-matlab/Ch7 - Pseudo-Random Numbers Generators/Listing7_4.m
 corpus/work/Apress--cryptography-cryptanalysis-matlab/Ch8 - Hash Functions/Listing82.m
-corpus/work/Apress--cryptography-cryptanalysis-matlab/Ch8 - Hash Functions/Listing84.m  # known: missing: java.security.MessageDigest.getInstance (bugs/missing.md)
+corpus/work/Apress--cryptography-cryptanalysis-matlab/Ch8 - Hash Functions/Listing84.m
