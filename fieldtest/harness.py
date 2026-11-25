@@ -501,6 +501,7 @@ _TIMING_VARS = frozenset({
     "elap_time", "Elapsed_time", "tTotal", "Tvec", "TT", "Tfor3", "Tma", "NOW",
     "total_time", "TBurst", "Ttime", "time_PCA", "time_SVD", "times_builtin",
     "times_bubble", "elapsed_time", "t_elapsed",
+    "Time_ODE15s", "t_ODE15s", "Tode23",
 })
 
 
@@ -556,6 +557,101 @@ def _sym_probe_close(va, vb):
     return bool(np.all(close | both_nan | same_inf))
 
 
+def _sym_expr_equiv_numeric(ea: str, eb: str) -> bool:
+    """Numeric probe check for symbolic expressions/equations whose string printouts
+    differ only in term ordering, rational representation, or diff(f(t), t, 2) vs diff(f(t), t, t)."""
+    import cmath
+    _KNOWN_FUNCS = frozenset({
+        "sin", "cos", "tan", "exp", "log", "sqrt", "sinh", "cosh", "tanh",
+        "asin", "acos", "atan", "abs",
+    })
+
+    def _norm_diff(s: str) -> str:
+        # diff(f(t), t, 2) -> diff(f(t), t, t)
+        def _repl(m):
+            target, var, n = m.group(1), m.group(2), int(m.group(3))
+            if 1 <= n <= 6:
+                return f"diff({target}, " + ", ".join([var] * n) + ")"
+            return m.group(0)
+        return re.sub(r"diff\(\s*([^,]+?)\s*,\s*([A-Za-z_]\w*)\s*,\s*(\d+)\s*\)", _repl, s)
+
+    sa, sb = _norm_diff(ea), _norm_diff(eb)
+    if re.sub(r"\s+", "", sa) == re.sub(r"\s+", "", sb):
+        return True
+
+    # Collect abstract calls (diff(...), unknown f(x)) into shared dummy symbols
+    sym_map: dict[str, str] = {}
+    def _abstract_replace(s: str) -> str:
+        # Replace diff(...) first (outermost)
+        def _rep_diff(m):
+            key = re.sub(r"\s+", "", m.group(0))
+            if key not in sym_map:
+                sym_map[key] = f"__nk_abs_{len(sym_map)}"
+            return sym_map[key]
+        s = re.sub(r"diff\([^()]*\([^()]*\)[^()]*\)|diff\([^()]*\)", _rep_diff, s)
+        # Replace unknown unary function calls like y(t), u(x), i(t)
+        def _rep_fn(m):
+            fn = m.group(1)
+            if fn in _KNOWN_FUNCS:
+                return m.group(0)
+            key = re.sub(r"\s+", "", m.group(0))
+            if key not in sym_map:
+                sym_map[key] = f"__nk_abs_{len(sym_map)}"
+            return sym_map[key]
+        s = re.sub(r"\b([A-Za-z_]\w*)\s*\(\s*[A-Za-z_]\w*\s*\)", _rep_fn, s)
+        return s
+
+    sa = _abstract_replace(sa)
+    sb = _abstract_replace(sb)
+
+    is_eq_a = "==" in sa
+    is_eq_b = "==" in sb
+    if is_eq_a != is_eq_b:
+        return False
+
+    def _to_py(expr: str) -> str:
+        return expr.replace("^", "**")
+
+    if is_eq_a:
+        la, ra = sa.split("==", 1)
+        lb, rb = sb.split("==", 1)
+        py_a = f"({_to_py(la)}) - ({_to_py(ra)})"
+        py_b = f"({_to_py(lb)}) - ({_to_py(rb)})"
+    else:
+        py_a, py_b = _to_py(sa), _to_py(sb)
+
+    idents = sorted(set(re.findall(r"\b[A-Za-z_]\w*\b", py_a + " " + py_b))
+                    - _KNOWN_FUNCS - {"pi", "e", "I", "i"})
+    env_base = {
+        "sin": cmath.sin, "cos": cmath.cos, "tan": cmath.tan,
+        "sinh": cmath.sinh, "cosh": cmath.cosh, "tanh": cmath.tanh,
+        "asin": cmath.asin, "acos": cmath.acos, "atan": cmath.atan,
+        "exp": cmath.exp, "log": cmath.log, "sqrt": cmath.sqrt,
+        "abs": abs, "pi": cmath.pi, "e": cmath.e, "I": 1j, "i": 1j,
+    }
+    probes_a, probes_b = [], []
+    for trial in range(5):
+        env = dict(env_base)
+        for idx, nm in enumerate(idents):
+            env[nm] = 1.13 + 0.37 * ((trial * 7 + idx * 3 + 1) % 11) + 0.05 * idx
+        try:
+            va = complex(eval(py_a, {"__builtins__": {}}, env))
+            vb = complex(eval(py_b, {"__builtins__": {}}, env))
+        except Exception:
+            return False
+        if not (np.isfinite(va) and np.isfinite(vb)):
+            return False
+        probes_a.append(va)
+        probes_b.append(vb)
+    arr_a = np.array(probes_a, dtype=np.complex128)
+    arr_b = np.array(probes_b, dtype=np.complex128)
+    if _sym_probe_close(arr_a, arr_b):
+        return True
+    if is_eq_a and _sym_probe_close(arr_a, -arr_b):
+        return True
+    return False
+
+
 def _compare_sym_var(name, sa, sb):
     """Compare two symbolic variable records from sidecar TSVs. Returns diff line or None."""
     if sa["shape"] != sb["shape"]:
@@ -586,6 +682,8 @@ def _compare_sym_var(name, sa, sb):
                 return f"DIFF {name}: sym values diverge (max rel {max_rel:.3e}; nk='{ea[:60]}' vs ml='{eb[:60]}')"
         if any_finite:
             return None
+    if ea and eb and _sym_expr_equiv_numeric(ea, eb):
+        return None
     if bool(pa) != bool(pb):
         return f"DIFF {name}: sym probe failed on one side (nk='{ea[:60]}' vs ml='{eb[:60]}')"
     return f"DIFF {name}: sym expr differs (nk='{ea[:60]}' vs ml='{eb[:60]}')"

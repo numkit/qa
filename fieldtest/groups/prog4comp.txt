@@ -10,7 +10,7 @@ corpus/work/hplgit--prog4comp/src/m/ball_max_height.m
 corpus/work/hplgit--prog4comp/src/m/ball_plot.m
 corpus/work/hplgit--prog4comp/src/m/ball_time.m
 corpus/work/hplgit--prog4comp/src/m/brute_force_root_finder_flat.m
-corpus/work/hplgit--prog4comp/src/m/example_symbolic.m  # known: missing:symbolic (Symbolic Math Toolbox syms)
+corpus/work/hplgit--prog4comp/src/m/example_symbolic.m
 corpus/work/hplgit--prog4comp/src/m/formatted_columns.m
 corpus/work/hplgit--prog4comp/src/m/formatted_print.m
 corpus/work/hplgit--prog4comp/src/m/growth1.m

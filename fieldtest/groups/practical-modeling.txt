@@ -1,22 +1,22 @@
 # group: practical-modeling — Practical MATLAB Modeling with Simulink (Apress)
-# source: wave-5 textbook onboarding (8 pass / 18 total)
+# source: wave-5 textbook onboarding (16 pass / 18 total)
 # run: python fieldtest/compare.py practical-modeling
 
 corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_1/iLaplace_Ex7.m
 corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_1/Laplace_vs_Dsolve_Ex6.m    # known: nonlinear 2nd-order ODE dsolve
-corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_1/Laplace_vs_Dsolve_New_MATLAB_ex4.m    # known: sym-rel-print (term order in LT_A)
-corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_1/Laplace_vs_Dsolve_New_MATLAB_ex5.m    # known: sym-rel-print (diff(y(t), t, 2) vs diff(y(t), t, t))
-corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_2/Example1.m    # known: sym-rel-print (term order in Equation)
+corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_1/Laplace_vs_Dsolve_New_MATLAB_ex4.m
+corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_1/Laplace_vs_Dsolve_New_MATLAB_ex5.m
+corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_2/Example1.m
 corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_2/Example2.m
 corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_2/Example3.m
-corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_2/Example4.m    # known: sym-rel-print (term order in Equation)
+corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_2/Example4.m
 corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_2/Example5.m
 corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_2/ExampleODE1.m    # known: nondeterministic: ode23 adaptive step count
 corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_2/ODEx_Compare.m
 corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_3/Adams_Moulton_2ndODE_ex1.m
 corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_3/Adams_Moulton_2ndODE_ex2.m
-corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_3/Example1_2ndODE.m    # known: sym-rel-print (diff(x(T), T, 2) vs diff(x(T), T, T))
-corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_3/Example2_2ndODE.m    # known: sym-rel-print (diff(x(T), T, 2) vs diff(x(T), T, T))
-corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_3/Example3_2ndODE.m    # known: sym-rel-print (diff(u(T), T, 2) vs diff(u(T), T, T))
-corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_3/Example4_2ndODE.m    # known: sym-rel-print (diff(u(T), T, 2) vs diff(u(T), T, T))
+corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_3/Example1_2ndODE.m
+corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_3/Example2_2ndODE.m
+corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_3/Example3_2ndODE.m
+corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_3/Example4_2ndODE.m
 corpus/work/Apress--practical-matlab-modeling-w-simulink/PART_1__Chapter_3/Example5_2ndODE.m

@@ -20,7 +20,7 @@ corpus/work/springer-math--Dynamical-Systems-with-Applications-using-MATLAB/Lync
 corpus/work/springer-math--Dynamical-Systems-with-Applications-using-MATLAB/Lynch R2016a/Programs_15d.m    # known: ode45-chaotic-trajectory (Chua circuit chaotic attractor trajectory over t=[0,100])
 corpus/work/springer-math--Dynamical-Systems-with-Applications-using-MATLAB/Lynch R2016a/Programs_15g.m    # known: ode45-chaotic-trajectory (4500-step Chua bifurcation diagram; exit=0, a matches to 1.3e-6)
 corpus/work/springer-math--Dynamical-Systems-with-Applications-using-MATLAB/Lynch R2016a/Programs_15h.m    # known: ode45-chaotic-trajectory (4500-step Chua hysteresis loop; exit=0, a matches to 1.3e-6)
-corpus/work/springer-math--Dynamical-Systems-with-Applications-using-MATLAB/Lynch R2016a/Programs_16a.m    # known: missing: syms (bugs/missing.md)
+corpus/work/springer-math--Dynamical-Systems-with-Applications-using-MATLAB/Lynch R2016a/Programs_16a.m
 corpus/work/springer-math--Dynamical-Systems-with-Applications-using-MATLAB/Lynch R2016a/Programs_20d.m    # known: ode45-adaptive-step-grid (adaptive RK45 step count differs on Hodgkin-Huxley ODE)
 corpus/work/springer-math--Dynamical-Systems-with-Applications-using-MATLAB/Lynch R2016a/Programs_20h.m    # known: ode45-adaptive-step-grid (adaptive RK45 step count differs on FitzHugh-Nagumo ODE)
 corpus/work/springer-math--Numerical-Methods-for-Stochastic-Partial-Differential-Equations-with-White-Noise/MATLAB Source Code/chapter1/main.m
@@ -36,14 +36,14 @@ corpus/work/springer-math--Numerical_Linear_Algebra_Theory_and_Applications/Matl
 corpus/work/springer-math--Numerical_Linear_Algebra_Theory_and_Applications/Matlab_code/FitFunctionNormaleq.m
 corpus/work/springer-math--Numerical_Linear_Algebra_Theory_and_Applications/Matlab_code/FitFunctionQRCGS.m
 corpus/work/springer-math--Numerical_Linear_Algebra_Theory_and_Applications/Matlab_code/HessenbergQR.m  # known: numerical-iteration-chaos (1-ulp matmul rounding over ~1000 QR iterations; same spectrum — bugs/closed/linalg/qr-last-column-sign-convention)
-corpus/work/springer-math--Numerical_Linear_Algebra_Theory_and_Applications/Matlab_code/Hornersrule_5roots.m    # known: missing: syms (bugs/missing.md)
+corpus/work/springer-math--Numerical_Linear_Algebra_Theory_and_Applications/Matlab_code/Hornersrule_5roots.m
 corpus/work/springer-math--Numerical_Linear_Algebra_Theory_and_Applications/Matlab_code/Hornersrule_bisection_classic.m
 corpus/work/springer-math--Numerical_Linear_Algebra_Theory_and_Applications/Matlab_code/InverseIteration.m  # known: numerical-iteration-chaos (1-ulp matmul rounding over ~1000 QR iterations; same spectrum — bugs/closed/linalg/qr-last-column-sign-convention)
 corpus/work/springer-math--Numerical_Linear_Algebra_Theory_and_Applications/Matlab_code/MainHatFit.m
 corpus/work/springer-math--Numerical_Linear_Algebra_Theory_and_Applications/Matlab_code/MethodOrtIter.m
-corpus/work/springer-math--Numerical_Linear_Algebra_Theory_and_Applications/Matlab_code/MethodQR_Wshift.m  # known: numerical-iteration-chaos (1-ulp matmul rounding over ~1000 QR iterations; same spectrum — bugs/closed/linalg/qr-last-column-sign-convention)
+corpus/work/springer-math--Numerical_Linear_Algebra_Theory_and_Applications/Matlab_code/MethodQR_Wshift.m
 corpus/work/springer-math--Numerical_Linear_Algebra_Theory_and_Applications/Matlab_code/MethodQR_iter.m
-corpus/work/springer-math--Numerical_Linear_Algebra_Theory_and_Applications/Matlab_code/MethodQR_shift.m  # known: numerical-iteration-chaos (1-ulp matmul rounding over ~1000 QR iterations; same spectrum — bugs/closed/linalg/qr-last-column-sign-convention)
+corpus/work/springer-math--Numerical_Linear_Algebra_Theory_and_Applications/Matlab_code/MethodQR_shift.m
 corpus/work/springer-math--Numerical_Linear_Algebra_Theory_and_Applications/Matlab_code/Poisson2D_Chol.m
 corpus/work/springer-math--Numerical_Linear_Algebra_Theory_and_Applications/Matlab_code/Poisson2D_ConjugateGrad.m
 corpus/work/springer-math--Numerical_Linear_Algebra_Theory_and_Applications/Matlab_code/Poisson2D_Gauss_Seidel.m
@@ -69,8 +69,8 @@ corpus/work/springer-math--signals-and-systems/Source code/Chapter-2/pr2_1.m
 corpus/work/springer-math--signals-and-systems/Source code/Chapter-2/pr2_2.m
 corpus/work/springer-math--signals-and-systems/Source code/Chapter-2/pr2_3.m
 corpus/work/springer-math--signals-and-systems/Source code/Chapter-2/pr2_4.m
-corpus/work/springer-math--signals-and-systems/Source code/Chapter-4/pr4_1.m    # known: missing: syms (bugs/missing.md)
-corpus/work/springer-math--signals-and-systems/Source code/Chapter-4/pr4_2.m    # known: missing: syms (bugs/missing.md)
+corpus/work/springer-math--signals-and-systems/Source code/Chapter-4/pr4_1.m
+corpus/work/springer-math--signals-and-systems/Source code/Chapter-4/pr4_2.m
 corpus/work/springer-math--signals-and-systems/Source code/Chapter-5/pr5_6.m
 corpus/work/springer-math--signals-and-systems/Source code/Chapter-5/pr5_7.m
 corpus/work/springer-math--signals-and-systems/Source code/Chapter-5/pr5_8.m
