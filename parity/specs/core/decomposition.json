@@ -1,14 +1,28 @@
 {
   "name": "decomposition",
   "namespace": "core",
-  "setup": "A = [4 1; 1 3]; b = [1; 2];",
-  "expr": "d = decomposition(A, 'lu'); x = solve(d, b); err = norm(A*x - b);",
+  "setup": "A = [4 1 2; 3 5 1; 2 1 6]; b = [1; 2; 3]; S = [4 1 1; 1 5 2; 1 2 6]; R = [1 2; 3 4; 5 6];",
+  "expr": "dlu = decomposition(A, 'lu'); xlu = dlu \\ b; xlut = dlu' \\ b; xlur = b' / dlu; rclu = rcond(dlu); dch = decomposition(S, 'chol'); xch = dch \\ b; dqr = decomposition(R, 'qr'); xqr = dqr \\ b; rqr = rank(dqr); dcod = decomposition(R, 'cod'); xcod = dcod \\ b; xcodr = [1 2] / dcod; d2 = 2 * dlu; x2 = d2 \\ b; ill = double(isIllConditioned(dlu));",
   "iters": 5,
   "tol": 1e-10,
   "fingerprint": [
-    "x(1)",
-    "x(2)",
-    "err"
+    "xlu(1)",
+    "xlu(2)",
+    "xlu(3)",
+    "xlut(1)",
+    "xlur(1)",
+    "rclu",
+    "xch(1)",
+    "xch(3)",
+    "xqr(1)",
+    "xqr(2)",
+    "rqr",
+    "xcod(1)",
+    "xcod(2)",
+    "xcodr(1)",
+    "xcodr(3)",
+    "x2(1)",
+    "ill"
   ],
-  "comment": "decomposition classdef object caching LU/QR/Chol factorizations."
+  "comment": "decomposition BuiltinClass: LU/Chol/QR/COD factorizations, mldivide, mrdivide, ctranspose, scalar scaling, rcond, rank, isIllConditioned."
 }
