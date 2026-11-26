@@ -203,7 +203,12 @@ try
                             continue;
                         end
                         val = get(co, pn);
-                        if isempty(val) || (~isnumeric(val) && ~islogical(val))
+                        if isempty(val)
+                            continue;
+                        end
+                        if isa(val, 'datetime')
+                            val = datenum(val);
+                        elseif ~isnumeric(val) && ~islogical(val)
                             continue;
                         end
                         dv = double(val);
@@ -381,6 +386,7 @@ def run_with_gfx(kind: str, script: Path, gfx_out: Path, answers=None):
             str(H.MATLAB),
             "-batch",
             "restoredefaultpath; clear RESTOREDEFAULTPATH_EXECUTED; pause('off'); "
+            "try, s__ = settings; s__.matlab.appearance.figure.GraphicsTheme.TemporaryValue = 'light'; clear s__; catch, end; "
             + addpath_cmd
             + f"run('{script.name}');"
             + dump_cmd,
