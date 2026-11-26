@@ -3964,3 +3964,6 @@ Functions benched by the harness that don't appear in any of the MATLAB-doc sect
 | `root` | — | Phase 1 Handle Graphics Root (groot): all 16 properties, get(groot) struct, ShowHiddenHandles, and defaultFigure* cascading inheritance. |
 | `figure` | — | Phase 1 Handle Graphics Figure: all 68 properties, numbering, reverse-chronological Children, IntegerHandle, paired Mode props, PaperType/PaperSize/PaperOrientation sync, Position sync, Theme, hex ColorSpec. |
 | `handle_ops` | — | Phase 1 Handle Graphics operations: findobj vs findall, allchild, ancestor, copyobj, vector/cell set & get, reset, gobjects/GraphicsPlaceholder isvalid vs isgraphics, close all vs close all force. |
+| `axes` | — | Phase 2 Axes (156 props) & NumericRuler (35 props): exact property counts, bidirectional Axes<->Ruler sync, FontSize cascade, hold/ishold, yyaxis left/right, grid/box/view. |
+| `polar_layout` | — | Phase 2 PolarAxes (110 props), TiledChartLayout (30 props), nexttile, subplot, and linkaxes. |
+| `decorations` | — | Phase 2 Text (44 props), Legend (44 props), ColorBar (42 props), ConstantLine (41 props): exact property counts, title/xlabel/text/legend/colorbar/xline semantics and CLim<->ColorBar.Limits sync. |

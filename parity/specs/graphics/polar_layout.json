@@ -1,0 +1,23 @@
+{
+  "name": "polar_layout",
+  "namespace": "graphics",
+  "setup": "close all force;",
+  "expr": "f1 = figure('Visible','off'); pax = polaraxes(f1); n_pax = numel(properties(pax)); rlim(pax,[0 5]); thetalim(pax,[0 180]); r_hi = pax.RLim(2); t_hi = pax.ThetaLim(2); f2 = figure('Visible','off'); tl = tiledlayout(f2, 2, 3, 'TileSpacing', 'compact', 'Padding', 'tight'); n_tl = numel(properties(tl)); a1 = nexttile(tl); a2 = nexttile(tl, 4, [1 2]); gs1 = tl.GridSize(1); gs2 = tl.GridSize(2); t1 = a1.Layout.Tile; t2 = a2.Layout.Tile; sp2 = a2.Layout.TileSpan(2); f3 = figure('Visible','off'); s1 = subplot(2,1,1); xlim(s1,[0 5]); s2 = subplot(2,1,2); xlim(s2,[2 10]); linkaxes([s1 s2],'x'); l_u = s1.XLim(2); xlim(s1,[-3 7]); l_p1 = s2.XLim(1); l_p2 = s2.XLim(2); close all force;",
+  "iters": 1,
+  "tol": 1e-12,
+  "fingerprint": [
+    "n_pax",
+    "r_hi",
+    "t_hi",
+    "n_tl",
+    "gs1",
+    "gs2",
+    "t1",
+    "t2",
+    "sp2",
+    "l_u",
+    "l_p1",
+    "l_p2"
+  ],
+  "comment": "Phase 2 PolarAxes (110 props), TiledChartLayout (30 props), nexttile, subplot, and linkaxes."
+}

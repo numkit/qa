@@ -1,0 +1,26 @@
+{
+  "name": "axes",
+  "namespace": "graphics",
+  "setup": "close all force;",
+  "expr": "f = figure('Visible','off'); ax = axes(f); n_ax = numel(properties(ax)); n_xr = numel(properties(ax.XAxis)); ax.XLim = [0 10]; xlm = strcmp(ax.XLimMode,'manual'); r_hi = ax.XAxis.Limits(2); ax.XAxis.Direction = 'reverse'; xrev = strcmp(ax.XDir,'reverse'); ax.FontSize = 14; tfs = ax.Title.FontSize; hold(ax,'on'); h1 = ishold(ax); hold(ax,'off'); h0 = ishold(ax); view(ax, 3); v3 = ax.View; view(ax, 2); yyaxis(ax,'left'); ylim(ax,[0 10]); yyaxis(ax,'right'); ylim(ax,[100 500]); n_ya = numel(ax.YAxis); yr_hi = ax.YLim(2); yyaxis(ax,'left'); yl_hi = ax.YLim(2); grid(ax,'on'); xg = strcmp(ax.XGrid,'on'); box(ax,'on'); bx = strcmp(ax.Box,'on'); close all force;",
+  "iters": 1,
+  "tol": 1e-12,
+  "fingerprint": [
+    "n_ax",
+    "n_xr",
+    "xlm",
+    "r_hi",
+    "xrev",
+    "tfs",
+    "h1",
+    "h0",
+    "n_ya",
+    "yr_hi",
+    "yl_hi",
+    "xg",
+    "bx",
+    "v3(1)",
+    "v3(2)"
+  ],
+  "comment": "Phase 2 Axes (156 props) & NumericRuler (35 props): exact property counts, bidirectional Axes<->Ruler sync, FontSize cascade, hold/ishold, yyaxis left/right, grid/box/view."
+}

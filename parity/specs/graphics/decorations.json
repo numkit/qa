@@ -1,0 +1,23 @@
+{
+  "name": "decorations",
+  "namespace": "graphics",
+  "setup": "close all force;",
+  "expr": "f = figure('Visible','off'); ax = axes(f); tt = title(ax,'MainTitle'); xl = xlabel(ax,'XAxis'); tx = text(ax, 1, 2, 'Note'); lg = legend(ax, {'a','b'}, 'Location', 'northwest', 'Box', 'off'); cb = colorbar(ax, 'southoutside'); cl = xline(ax, 2.5, '--r', 'Cut'); n_tx = numel(properties(tx)); n_lg = numel(properties(lg)); n_cb = numel(properties(cb)); n_cl = numel(properties(cl)); ok_tt = strcmp(ax.Title.String,'MainTitle'); ok_xl = strcmp(ax.XLabel.String,'XAxis'); ok_pos = tx.Position(1) + 10*tx.Position(2) + 100*tx.Position(3); ok_lg = strcmp(lg.Location,'northwest') && strcmp(lg.Box,'off'); clim(ax, [-2 8]); cb_lo = cb.Limits(1); cb_hi = cb.Limits(2); cl_v = cl.Value; ok_cl = strcmp(cl.InterceptAxis,'x') && strcmp(cl.LineStyle,'--') && strcmp(cl.Label,'Cut'); close all force;",
+  "iters": 1,
+  "tol": 1e-12,
+  "fingerprint": [
+    "n_tx",
+    "n_lg",
+    "n_cb",
+    "n_cl",
+    "ok_tt",
+    "ok_xl",
+    "ok_pos",
+    "ok_lg",
+    "cb_lo",
+    "cb_hi",
+    "cl_v",
+    "ok_cl"
+  ],
+  "comment": "Phase 2 Text (44 props), Legend (44 props), ColorBar (42 props), ConstantLine (41 props): exact property counts, title/xlabel/text/legend/colorbar/xline semantics and CLim<->ColorBar.Limits sync."
+}
