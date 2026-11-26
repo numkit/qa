@@ -1,0 +1,23 @@
+{
+  "name": "handle_ops",
+  "namespace": "graphics",
+  "setup": "close all force;",
+  "expr": "f1 = figure('Visible', 'off', 'Tag', 'alpha', 'Name', 'N1'); f2 = figure('Visible', 'off', 'Tag', 'beta', 'Name', 'N2'); fh = figure('Visible', 'off', 'HandleVisibility', 'off', 'Tag', 'secret'); n_fo = numel(findobj(groot, 'Tag', 'secret')); n_fa = numel(findall(groot, 'Tag', 'secret')); n_ch = numel(get(groot, 'Children')); n_ac = numel(allchild(groot)); anc_ok = double(ancestor(f1, 'root') == groot); fc = copyobj(f1, groot); cp_ok = double(strcmp(fc.Tag, 'alpha') && fc ~= f1); arr = [f1; f2]; set(arr, {'Tag'}, {'x1'; 'x2'}); gv = get(arr, 'Tag'); vec_ok = double(strcmp(gv{1}, 'x1') && strcmp(gv{2}, 'x2')); f1.Position = [11 22 333 444]; reset(f1); rst_ok = double(isempty(f1.Tag) && f1.Position(3) == 333); gp = gobjects(2, 3); gp_v = double(all(isvalid(gp(:)))); gp_g = double(any(isgraphics(gp(:)))); close('all'); after_ca = numel(allchild(groot)); close('all', 'force'); after_caf = numel(allchild(groot));",
+  "iters": 3,
+  "tol": 1e-12,
+  "fingerprint": [
+    "n_fo",
+    "n_fa",
+    "n_ch",
+    "n_ac",
+    "anc_ok",
+    "cp_ok",
+    "vec_ok",
+    "rst_ok",
+    "gp_v",
+    "gp_g",
+    "after_ca",
+    "after_caf"
+  ],
+  "comment": "Phase 1 Handle Graphics operations: findobj vs findall, allchild, ancestor, copyobj, vector/cell set & get, reset, gobjects/GraphicsPlaceholder isvalid vs isgraphics, close all vs close all force."
+}

@@ -1,0 +1,26 @@
+{
+  "name": "figure",
+  "namespace": "graphics",
+  "setup": "close all force;",
+  "expr": "f1 = figure('Visible', 'off', 'Name', 'F1', 'Tag', 't1'); f2 = figure('Visible', 'off'); f5 = figure(5); set(f5, 'Visible', 'off'); f3 = figure('Visible', 'off'); np = numel(properties(f1)); nf = numel(fieldnames(get(f1))); ch = get(groot, 'Children'); c1 = ch(1).Number; c2 = ch(2).Number; c3 = ch(3).Number; c4 = ch(4).Number; f3.IntegerHandle = 'off'; ih_empty = double(isempty(f3.Number)); f3.IntegerHandle = 'on'; ih_back = f3.Number; f1.Renderer = 'painters'; rm_man = double(strcmp(f1.RendererMode, 'manual')); f1.PaperType = 'A4'; ps_w = f1.PaperSize(1); f1.PaperOrientation = 'landscape'; ps_lw = f1.PaperSize(1); f1.PaperSize = [10 20]; pt_cust = double(strcmp(f1.PaperType, '<custom>')); f1.Position = [10 20 500 400]; ip_w = f1.InnerPosition(3); f1.Theme = 'dark'; th_dark = double(strcmp(f1.Theme.BaseColorStyle, 'dark')); f1.Color = '#336699'; col_g = f1.Color(2); close all force;",
+  "iters": 3,
+  "tol": 1e-4,
+  "fingerprint": [
+    "np",
+    "nf",
+    "c1",
+    "c2",
+    "c3",
+    "c4",
+    "ih_empty",
+    "ih_back",
+    "rm_man",
+    "ps_w",
+    "ps_lw",
+    "pt_cust",
+    "ip_w",
+    "th_dark",
+    "col_g"
+  ],
+  "comment": "Phase 1 Handle Graphics Figure: all 68 properties, numbering, reverse-chronological Children, IntegerHandle, paired Mode props, PaperType/PaperSize/PaperOrientation sync, Position sync, Theme, hex ColorSpec."
+}

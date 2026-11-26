@@ -1,0 +1,20 @@
+{
+  "name": "root",
+  "namespace": "graphics",
+  "setup": "close all force;",
+  "expr": "g = groot; np = numel(properties(g)); nf = numel(fieldnames(get(g))); is_root = double(strcmp(g.Type, 'root')); u_def = double(strcmp(g.Units, 'pixels')); shh0 = double(strcmp(g.ShowHiddenHandles, 'off')); g.ShowHiddenHandles = 'on'; shh1 = double(strcmp(g.ShowHiddenHandles, 'on')); g.ShowHiddenHandles = 'off'; set(g, 'defaultFigureColor', [0.2 0.3 0.4]); fd = figure('Visible', 'off'); c_inh = fd.Color(1); set(fd, 'Color', 'r'); c_red = fd.Color(1); set(fd, 'Color', 'default'); c_def = fd.Color(1); set(g, 'defaultFigureColor', 'remove'); close all force;",
+  "iters": 3,
+  "tol": 1e-12,
+  "fingerprint": [
+    "np",
+    "nf",
+    "is_root",
+    "u_def",
+    "shh0",
+    "shh1",
+    "c_inh",
+    "c_red",
+    "c_def"
+  ],
+  "comment": "Phase 1 Handle Graphics Root (groot): all 16 properties, get(groot) struct, ShowHiddenHandles, and defaultFigure* cascading inheritance."
+}
