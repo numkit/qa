@@ -3967,3 +3967,6 @@ Functions benched by the harness that don't appear in any of the MATLAB-doc sect
 | `axes` | — | Phase 2 Axes (156 props) & NumericRuler (35 props): exact property counts, bidirectional Axes<->Ruler sync, FontSize cascade, hold/ishold, yyaxis left/right, grid/box/view. |
 | `polar_layout` | — | Phase 2 PolarAxes (110 props), TiledChartLayout (30 props), nexttile, subplot, and linkaxes. |
 | `decorations` | — | Phase 2 Text (44 props), Legend (44 props), ColorBar (42 props), ConstantLine (41 props): exact property counts, title/xlabel/text/legend/colorbar/xline semantics and CLim<->ColorBar.Limits sync. |
+| `charts_2d` | — | Phase 3 2D chart primitives: Line (50), Scatter (63), Stem (49), ErrorBar (48), Area (39), Stair (42), Bar (57), live YData->YLim auto-update, grouped Bar XEndPoints. |
+| `charts_3d_hist` | — | Phase 3 Surface (60), Contour (50), Quiver (54), Image/imagesc (27), Histogram (41): exact property counts, imagesc YDir/CLim, histogram binpicker & pdf normalization. |
+| `animated_patch_annot` | — | Phase 3 Patch (58), AnimatedLine (34), TextBox (38): Vertices/Faces sync, addpoints/getpoints/clearpoints/MaximumNumPoints, annotation textbox. |

@@ -1,0 +1,22 @@
+{
+  "name": "charts_3d_hist",
+  "namespace": "graphics",
+  "setup": "close all force;",
+  "expr": "f = figure('Visible','off'); ax = axes(f); hs = surf(ax, [1 2; 3 4]); n_sf = numel(properties(hs)); sf_z = hs.ZData(2,2); [~, hc] = contour(ax, peaks(6)); n_ct = numel(properties(hc)); hq = quiver(ax, [0 1], [0 1], [1 0], [0 1]); n_qv = numel(properties(hq)); hi = imagesc(ax, [1 2 3; 4 5 6]); n_im = numel(properties(hi)); im_yd = strcmp(ax.YDir,'reverse'); im_cl2 = ax.CLim(2); cla(ax,'reset'); hh = histogram(ax, linspace(0.001, 8.48, 500), 10, 'Normalization', 'pdf'); n_hg = numel(properties(hh)); be1 = hh.BinEdges(1); beEnd = hh.BinEdges(end); areaPdf = sum(hh.Values .* diff(hh.BinEdges)); close all force;",
+  "iters": 1,
+  "tol": 1e-9,
+  "fingerprint": [
+    "n_sf",
+    "sf_z",
+    "n_ct",
+    "n_qv",
+    "n_im",
+    "im_yd",
+    "im_cl2",
+    "n_hg",
+    "be1",
+    "beEnd",
+    "areaPdf"
+  ],
+  "comment": "Phase 3 Surface (60), Contour (50), Quiver (54), Image/imagesc (27), Histogram (41): exact property counts, imagesc YDir/CLim, histogram binpicker & pdf normalization."
+}

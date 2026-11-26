@@ -1,0 +1,24 @@
+{
+  "name": "charts_2d",
+  "namespace": "graphics",
+  "setup": "close all force;",
+  "expr": "f = figure('Visible','off'); ax = axes(f); h1 = plot(ax, [0 10], [0 20]); n_ln = numel(properties(h1)); yl1 = ax.YLim(2); h1.YData = [0 100]; yl2 = ax.YLim(2); hold(ax,'on'); h2 = scatter(ax, [1 2], [3 4], 'filled'); n_sc = numel(properties(h2)); sc_fc = strcmp(h2.MarkerFaceColor,'flat'); h3 = stem(ax, [1 2 3]); n_st = numel(properties(h3)); h4 = errorbar(ax, [1 2], [3 4], [0.5 0.5]); n_eb = numel(properties(h4)); h5 = area(ax, [1 2 3]); n_ar = numel(properties(h5)); h6 = stairs(ax, [1 2 3]); n_sr = numel(properties(h6)); cla(ax,'reset'); b = bar(ax, 1:5, [12 25 31; 13 21 33; 16 23 30; 17 26 35; 15 24 37]); n_br = numel(properties(b(1))); xep1 = b(1).XEndPoints(1); xep2 = b(2).XEndPoints(1); xep3 = b(3).XEndPoints(1); close all force;",
+  "iters": 1,
+  "tol": 1e-12,
+  "fingerprint": [
+    "n_ln",
+    "yl1",
+    "yl2",
+    "n_sc",
+    "sc_fc",
+    "n_st",
+    "n_eb",
+    "n_ar",
+    "n_sr",
+    "n_br",
+    "xep1",
+    "xep2",
+    "xep3"
+  ],
+  "comment": "Phase 3 2D chart primitives: Line (50), Scatter (63), Stem (49), ErrorBar (48), Area (39), Stair (42), Bar (57), live YData->YLim auto-update, grouped Bar XEndPoints."
+}

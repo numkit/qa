@@ -1,0 +1,23 @@
+{
+  "name": "animated_patch_annot",
+  "namespace": "graphics",
+  "setup": "close all force;",
+  "expr": "f = figure('Visible','off'); ax = axes(f); hp = patch(ax, [0 2 0], [0 0 3], 'g'); n_pt = numel(properties(hp)); pv_x = hp.Vertices(2,1); pv_y = hp.Vertices(3,2); pf_g = hp.FaceColor(2); an = animatedline(ax, 'MaximumNumPoints', 3); n_al = numel(properties(an)); addpoints(an, [1 2], [10 20]); addpoints(an, [3 4], [30 40]); [axp, ayp] = getpoints(an); n_pts = numel(axp); p_x1 = axp(1); p_y3 = ayp(3); clearpoints(an); [axp2, ~] = getpoints(an); n_pts0 = numel(axp2); tb = annotation(f, 'textbox', [0.1 0.2 0.3 0.4], 'String', 'Hello'); n_tb = numel(properties(tb)); tb_ok = strcmp(tb.String,'Hello'); tb_w = tb.Position(3); close all force;",
+  "iters": 1,
+  "tol": 1e-12,
+  "fingerprint": [
+    "n_pt",
+    "pv_x",
+    "pv_y",
+    "pf_g",
+    "n_al",
+    "n_pts",
+    "p_x1",
+    "p_y3",
+    "n_pts0",
+    "n_tb",
+    "tb_ok",
+    "tb_w"
+  ],
+  "comment": "Phase 3 Patch (58), AnimatedLine (34), TextBox (38): Vertices/Faces sync, addpoints/getpoints/clearpoints/MaximumNumPoints, annotation textbox."
+}
