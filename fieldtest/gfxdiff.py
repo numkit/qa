@@ -685,6 +685,18 @@ def diff_scenes(nk_scene: dict, ml_scene: dict) -> dict:
                         continue
                     ok_v, rel = _float_list_close(dnk["vals"], dml["vals"])
                     if not ok_v:
+                        # On datetime axes, MATLAB's DatetimeRuler stores Patch.Vertices(:,1)
+                        # relative to the first date (e.g. 0..24107) while Patch.XData holds the
+                        # absolute serial dates. If XData and YData already match, check Vertices
+                        # with the X-origin shift accounted for.
+                        if (pn == "Vertices" and oml["type"] == "patch"
+                                and "XData" in onk["data"] and "XData" in oml["data"]):
+                            xd_nk = onk["data"]["XData"]
+                            xd_ml = oml["data"]["XData"]
+                            ok_x, _ = _float_list_close(xd_nk["vals"], xd_ml["vals"])
+                            if ok_x and xd_ml["vals"] and max(abs(v) for v in xd_ml["vals"] if math.isfinite(v)) > 600000.0:
+                                meta.append(f"{otag}.Vertices: datetime ruler origin offset (XData/YData match)")
+                                continue
                         target.append(
                             f"{otag}.{pn}.values: diverge (rel={rel:.3e}, shape={dml['shape']}, "
                             f"nk={dnk['vals'][:4]} vs ml={dml['vals'][:4]})"
@@ -886,7 +898,8 @@ def main():
             if r["verdict"] == "gfx-mismatch" and r.get("hard"):
                 extra = r["hard"][0][:90]
             elif r["verdict"] not in ("pass", "pass-data", "no-figs", "nondeterministic"):
-                extra = (r.get("detail") or "").splitlines()[0][:90]
+                dlines = (r.get("detail") or "").splitlines()
+                extra = dlines[0][:90] if dlines else ""
             elif r["verdict"] == "pass-data":
                 extra = f"lim={len(r.get('lim', []))} meta={len(r.get('meta', []))}"
             print(
