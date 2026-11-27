@@ -35,7 +35,7 @@ corpus/work/Apress--matlab-machine-learning-recipes/Chapter_08/OneNeuron.m
 corpus/work/Apress--matlab-machine-learning-recipes/Chapter_08/PendulumSim.m
 corpus/work/Apress--matlab-machine-learning-recipes/Chapter_08/SunnyDay.m
 corpus/work/Apress--matlab-machine-learning-recipes/Chapter_10/Digit3TrainingData.m  # known: runtime-error: Error: line 30, column 48: Sorry, the font 'courier' is not available. (in call to 'error'
-corpus/work/Apress--matlab-machine-learning-recipes/Chapter_10/TestNN.m  # known: missing: image (bugs/missing.md)
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_10/TestNN.m  # known: rng-stream (random NN weights)
 corpus/work/Apress--matlab-machine-learning-recipes/Chapter_10/TrainNN.m  # known: missing: image (bugs/missing.md)
 corpus/work/Apress--matlab-machine-learning-recipes/Chapter_12/KF1DDemo.m
 corpus/work/Apress--matlab-machine-learning-recipes/Chapter_12/KFBilliardsDemo.m

@@ -28,7 +28,7 @@ corpus/work/sdrforengineers--code/matlab/nyquist.m
 corpus/work/sdrforengineers--code/matlab/ofdm_sym.m
 corpus/work/sdrforengineers--code/matlab/psk.m
 corpus/work/sdrforengineers--code/matlab/robin.m
-corpus/work/sdrforengineers--code/matlab/sfdr_example.m  # known: workspace-mismatch
+corpus/work/sdrforengineers--code/matlab/sfdr_example.m  # known: fft-noiseless-floor (-332 dB machine-eps spur on pure sine; 0.098 dB)
 corpus/work/sdrforengineers--code/matlab/sfdr_test.m
 corpus/work/sdrforengineers--code/matlab/simulated_DAC.m
 corpus/work/sdrforengineers--code/matlab/srrc_impulse_response.m
