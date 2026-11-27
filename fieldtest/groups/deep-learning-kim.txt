@@ -18,4 +18,4 @@ corpus/work/Apress--matlab-deep-learning/Deep-Learning-for-Beginners-master/ch.4
 corpus/work/Apress--matlab-deep-learning/Deep-Learning-for-Beginners-master/ch.5/TestDeepDropout.m
 corpus/work/Apress--matlab-deep-learning/Deep-Learning-for-Beginners-master/ch.5/TestDeepReLU.m
 corpus/work/Apress--matlab-deep-learning/Deep-Learning-for-Beginners-master/ch.6/PlotFeatures.m
-corpus/work/Apress--matlab-deep-learning/Deep-Learning-for-Beginners-master/ch.6/TestMnistConv.m
+corpus/work/Apress--matlab-deep-learning/Deep-Learning-for-Beginners-master/ch.6/TestMnistConv.m  # known: nk-hang (pure-M-loop MNIST CNN training >90s)

@@ -12,7 +12,7 @@ corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/PAPR_of_preamb
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/PARR_of_preamble.m
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_FWGN.m  # known: workspace-mismatch (ill-conditioned polyfit RCOND=1.2e-18)
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_IEEE80211_model.m
-corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_Jakes_model.m
+corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_Jakes_model.m  # known: nk-hang (O(50000^2) autocorrelation loop >90s)
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_modified_FWGN.m
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_ray_fading.m
 corpus/work/yang69--MIMO-OFDM-Wireless-Communications-with-MATLAB/plot_Ray_Ric_channel.m

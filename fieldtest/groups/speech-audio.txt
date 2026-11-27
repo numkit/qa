@@ -15,7 +15,7 @@ corpus/work/JensAhrens--soundfieldsynthesis/Chapter_2/Fig_2_3a.m
 corpus/work/JensAhrens--soundfieldsynthesis/Chapter_2/Fig_2_3b.m
 corpus/work/JensAhrens--soundfieldsynthesis/Chapter_2/Fig_2_4.m
 corpus/work/JensAhrens--soundfieldsynthesis/Chapter_2/Fig_2_6.m
-corpus/work/JensAhrens--soundfieldsynthesis/Chapter_2/Fig_2_7.m
+corpus/work/JensAhrens--soundfieldsynthesis/Chapter_2/Fig_2_7.m  # known: nk-hang (2500x 300x300 spherical Bessel/Legendre grid >90s)
 corpus/work/JensAhrens--soundfieldsynthesis/Chapter_2/Fig_2_8a.m
 corpus/work/JensAhrens--soundfieldsynthesis/Chapter_2/Fig_2_8b.m
 corpus/work/JensAhrens--soundfieldsynthesis/Chapter_3/Fig_3_18b.m

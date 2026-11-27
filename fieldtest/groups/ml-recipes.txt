@@ -29,8 +29,8 @@ corpus/work/Apress--matlab-machine-learning-recipes/Chapter_06/MFDemo.m
 corpus/work/Apress--matlab-machine-learning-recipes/Chapter_07/SimpleClassifierDemo.m
 corpus/work/Apress--matlab-machine-learning-recipes/Chapter_07/SimpleClassifierExample.m
 corpus/work/Apress--matlab-machine-learning-recipes/Chapter_07/TestDecisionTree.m
-corpus/work/Apress--matlab-machine-learning-recipes/Chapter_08/NNPendulumDemo.m
-corpus/work/Apress--matlab-machine-learning-recipes/Chapter_08/NNPendulumDemoLinear.m
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_08/NNPendulumDemo.m  # known: nk-hang (pure-M neural-net training loop >90s)
+corpus/work/Apress--matlab-machine-learning-recipes/Chapter_08/NNPendulumDemoLinear.m  # known: nk-hang (pure-M neural-net training loop >90s)
 corpus/work/Apress--matlab-machine-learning-recipes/Chapter_08/OneNeuron.m
 corpus/work/Apress--matlab-machine-learning-recipes/Chapter_08/PendulumSim.m
 corpus/work/Apress--matlab-machine-learning-recipes/Chapter_08/SunnyDay.m
