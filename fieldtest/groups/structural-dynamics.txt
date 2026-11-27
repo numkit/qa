@@ -54,7 +54,7 @@ corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB 
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_13/EX_6_13.m # known: eig-sign
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_14/EX_6_14.m
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_15/EX_6_15.m # known: eig-sign
-corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_16/EX_6_16.m # known: missing:symbolic (syms)
+corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_16/EX_6_16.m # known: eig-sign (modal sign flip; physical x1/x2/y match exact)
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_17/EX_6_17.m # known: eig-sign
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_18/EX_6_18.m
 corpus/work/mohsen-azimi--Structural-Dynamics-and-Vibration-Control-Book/MATLAB Codes/Chapter 6/EX_6_19/EX_6_19.m

@@ -5,7 +5,7 @@
 # trailing '# known: <bug>' marks a divergence already filed — the runner
 # prints those as KNOWN; anything else diverging is NEW (exit code 1).
 
-corpus/work/springer-math--Dynamical-Systems-with-Applications-using-MATLAB/Lynch R2016a/Program_1b.m    # known: missing: ezplot (bugs/missing.md)
+corpus/work/springer-math--Dynamical-Systems-with-Applications-using-MATLAB/Lynch R2016a/Program_1b.m    # known: ode45-adaptive-steps
 corpus/work/springer-math--Dynamical-Systems-with-Applications-using-MATLAB/Lynch R2016a/Program_1c.m
 corpus/work/springer-math--Dynamical-Systems-with-Applications-using-MATLAB/Lynch R2016a/Program_1d.m    # known: ode45-adaptive-step-grid (adaptive RK45 step count differs; trajectory matches)
 corpus/work/springer-math--Dynamical-Systems-with-Applications-using-MATLAB/Lynch R2016a/Program_2b.m
