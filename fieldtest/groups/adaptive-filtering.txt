@@ -2,9 +2,9 @@
 # source: qualify 2026-10-19, 44/46 MATLAB-qualified scripts
 # run: python fieldtest/compare.py adaptive-filtering
 
-corpus/work/StevenShuoFeng--Adaptive-Filtering/Blind_Adaptive_Filtering/example_channelEQ_Affine_projectionCM.m  # known: Chaotic blind-equalizer sensitivity to floating-point rounding over 10k iterations
-corpus/work/StevenShuoFeng--Adaptive-Filtering/Blind_Adaptive_Filtering/example_channelEQ_CMA.m  # known: Chaotic blind-equalizer sensitivity to floating-point rounding over 10k iterations
-corpus/work/StevenShuoFeng--Adaptive-Filtering/Blind_Adaptive_Filtering/example_channelEQ_Godard.m  # known: Chaotic blind-equalizer sensitivity to floating-point rounding over 10k iterations
+corpus/work/StevenShuoFeng--Adaptive-Filtering/Blind_Adaptive_Filtering/example_channelEQ_Affine_projectionCM.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/Blind_Adaptive_Filtering/example_channelEQ_CMA.m
+corpus/work/StevenShuoFeng--Adaptive-Filtering/Blind_Adaptive_Filtering/example_channelEQ_Godard.m
 corpus/work/StevenShuoFeng--Adaptive-Filtering/Blind_Adaptive_Filtering/example_channelEQ_Sato.m  # known: Chaotic blind-equalizer sensitivity to floating-point rounding over 10k iterations
 corpus/work/StevenShuoFeng--Adaptive-Filtering/Fast_Transversal_RLS_Algorithms/example_systemID_Fast_RLS.m
 corpus/work/StevenShuoFeng--Adaptive-Filtering/Fast_Transversal_RLS_Algorithms/example_systemID_Stab_Fast_RLS.m

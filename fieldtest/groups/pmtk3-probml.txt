@@ -10,6 +10,6 @@ corpus/work/probml--pmtk3/data/housing/housingDataMake.m
 corpus/work/probml--pmtk3/data/moteData/moteDataMake.m
 corpus/work/probml--pmtk3/data/mpg/mpgDataMake.m
 corpus/work/probml--pmtk3/data/ngramData/ngramMake.m
-corpus/work/probml--pmtk3/data/tinyImages/tinyImages.m    # known: workspace-mismatch: DIFF brazilFlag: values diverge (max rel 2.550e+02); DIFF brazilFlagGray: values diverge (max rel 6.
+corpus/work/probml--pmtk3/data/tinyImages/tinyImages.m
 corpus/work/probml--pmtk3/data/XimgRgb/XimgRgbMake.m
 corpus/work/probml--pmtk3/demos/additiveNoiseModel.m

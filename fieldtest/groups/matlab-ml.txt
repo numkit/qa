@@ -8,7 +8,7 @@
 corpus/work/Apress--matlab-machine-learning/Chapter_01/LinearRegression.m
 corpus/work/Apress--matlab-machine-learning/Chapter_05/MATLABPlotTypes.m
 corpus/work/Apress--matlab-machine-learning/Chapter_05/TwoDDataDisplay.m  # known: missing: unknown (bugs/missing.md)
-corpus/work/Apress--matlab-machine-learning/Chapter_07/TestNN.m  # known: missing: image (bugs/missing.md)
+corpus/work/Apress--matlab-machine-learning/Chapter_07/TestNN.m
 corpus/work/Apress--matlab-machine-learning/Chapter_08/SimpleClassifierDemo.m
 corpus/work/Apress--matlab-machine-learning/Chapter_08/SimpleClassifierExample.m
 corpus/work/Apress--matlab-machine-learning/Chapter_08/TestDecisionTree.m

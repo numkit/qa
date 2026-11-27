@@ -24,7 +24,7 @@ corpus/work/Apress--matlab-recipes-2e/Chapter_03/SphereLighting.m
 corpus/work/Apress--matlab-recipes-2e/Chapter_04/PatchAnimation.m
 corpus/work/Apress--matlab-recipes-2e/Chapter_04/PatchAnimationStorage.m
 corpus/work/Apress--matlab-recipes-2e/Chapter_04/TimeDisplayDemo.m
-corpus/work/Apress--matlab-recipes-2e/Chapter_04/UIControlDemo.m
+corpus/work/Apress--matlab-recipes-2e/Chapter_04/UIControlDemo.m  # known: hardware-screensize (get(0,'ScreenSize') reflects host DPI vs headless 1920x1080)
 corpus/work/Apress--matlab-recipes-2e/Chapter_06/DoubleIntegratorSim.m
 corpus/work/Apress--matlab-recipes-2e/Chapter_07/SCARARobotSim.m
 corpus/work/Apress--matlab-recipes-2e/Chapter_08/PMMachineDemo.m

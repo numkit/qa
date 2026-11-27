@@ -15,7 +15,7 @@ corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem15.m
 corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem16.m  # known: ill-conditioned (thin Timoshenko beam cond(K) = 1.2e10, rcond = 5.9e-11; displacements ~1.6e-8 rel)
 corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem16Buckling.m  # known: eig-sign (buckling load lambda matches; mode shape sign/scale ambiguity)
 corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem16fgm.m  # known: ill-conditioned (unconstrained axial DOF fixedNodeU=[], singular K with cond(K) = 4.3e16, rcond = 6.9e-18; w_bar matches)
-corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem16fgmVib.m
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem16fgmVib.m  # known: eig-sign (mode shape +/-1 eigenvector sign ambiguity)
 corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem16timeReddy.m
 corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem16vibrations.m  # known: eig-sign (omega matches; +/-1 mode shape sign ambiguity)
 corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem16vibrationsSchultz.m  # known: eig-sign (omega matches; +/-1 mode shape sign ambiguity)
@@ -32,7 +32,7 @@ corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem19.m
 corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem19a.m
 corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem19aBuckling.m  # known: legacy-colordef (MATLAB R2025b removed colordef; NumKit supports it)
 corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem19aVibrations.m  # known: eig-sign (omega matches; +/-1 and degenerate plate mode ambiguity)
-corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem19b.m  # known: ill-conditioned (Q9 Mindlin plate with reduced quadrature has hourglass modes, cond(K) > 1e17)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem19b.m
 corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem19bBuckling.m  # known: legacy-colordef (MATLAB R2025b removed colordef; NumKit supports it)
 corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem19Buckling.m  # known: eig-sign (buckling load lambda matches; mode shape sign/scale ambiguity)
 corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem19bVibrations.m  # known: eig-sign (omega matches; +/-1 and degenerate plate mode ambiguity)
@@ -67,5 +67,5 @@ corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem8.m
 corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem9.m
 corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem9a.m
 corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem9buk.m
-corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem9vib.m  # known: eig-sign (omega matches; +/-1 mode shape sign ambiguity)
+corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problem9vib.m
 corpus/work/7hefoo1--matlab_codes_fem_book_/matlab_codes_fem_book/problemK.m
