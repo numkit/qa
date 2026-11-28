@@ -4,7 +4,7 @@
     "verdict": "PASS"
   },
   "layout_tiledlayout": {
-    "score": 86.97,
+    "score": 87.1,
     "verdict": "RENDER_DIFF"
   },
   "layout_manual_position": {
@@ -48,7 +48,7 @@
     "verdict": "PASS"
   },
   "chart_scatter_varied": {
-    "score": 89.94,
+    "score": 92.56,
     "verdict": "PASS"
   },
   "chart_bar_grouped_stacked": {
@@ -72,8 +72,8 @@
     "verdict": "PASS"
   },
   "chart_contour_and_filled": {
-    "score": 88.61,
-    "verdict": "DOM_ONLY"
+    "score": 91.97,
+    "verdict": "PASS"
   },
   "raster_imagesc_colorbar": {
     "score": 94.14,
@@ -84,16 +84,16 @@
     "verdict": "PASS"
   },
   "plot3d_surf_mesh": {
-    "score": 62.74,
-    "verdict": "DOM+RENDER"
+    "score": 83.02,
+    "verdict": "RENDER_DIFF"
   },
   "plot3d_plot3_spiral": {
-    "score": 40.69,
-    "verdict": "DOM+RENDER"
+    "score": 92.51,
+    "verdict": "PASS"
   },
   "polar_plot_and_opts": {
-    "score": 58.92,
-    "verdict": "DOM+RENDER"
+    "score": 91.91,
+    "verdict": "PASS"
   },
   "yyaxis_dual": {
     "score": 90.55,
@@ -112,8 +112,8 @@
     "verdict": "PASS"
   },
   "legend_locations_and_opts": {
-    "score": 87.91,
-    "verdict": "DOM+RENDER"
+    "score": 92.05,
+    "verdict": "PASS"
   },
   "annotations_and_data_text": {
     "score": 94.72,

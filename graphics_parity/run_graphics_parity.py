@@ -83,6 +83,8 @@ def write_batch_script(
             lines.append("    set(0, 'DefaultFigureVisible', 'off');")
         lines.append(f"    run('{case_m.as_posix()}');")
         lines.append("    f_cur = gcf;")
+        if engine_kind == "matlab":
+            lines.append("    drawnow;")
         lines.append(f"    dump_dom(f_cur, '{dom_path}');")
         if engine_kind == "matlab":
             # exportgraphics auto-crops in MATLAB; print -dpng preserves full Figure.Position
