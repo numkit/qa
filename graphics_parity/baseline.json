@@ -20,7 +20,7 @@
     "verdict": "DOM+RENDER"
   },
   "layout_reverse_dirs": {
-    "score": 57.63,
+    "score": 76.48,
     "verdict": "DOM+RENDER"
   },
   "line_styles_and_colors": {
@@ -28,7 +28,7 @@
     "verdict": "DOM+RENDER"
   },
   "line_markers_gallery": {
-    "score": 75.16,
+    "score": 75.27,
     "verdict": "DOM+RENDER"
   },
   "line_log_scales": {
@@ -48,31 +48,31 @@
     "verdict": "DOM+RENDER"
   },
   "chart_scatter_varied": {
-    "score": 68.79,
+    "score": 70.67,
     "verdict": "DOM+RENDER"
   },
   "chart_bar_grouped_stacked": {
-    "score": 38.21,
-    "verdict": "DOM+RENDER"
+    "score": 94.39,
+    "verdict": "PASS"
   },
   "chart_histogram": {
-    "score": 85.72,
-    "verdict": "DOM+RENDER"
+    "score": 92.25,
+    "verdict": "PASS"
   },
   "chart_area_patch": {
     "score": 91.73,
     "verdict": "PASS"
   },
   "chart_errorbar": {
-    "score": 65.89,
-    "verdict": "DOM+RENDER"
+    "score": 89.28,
+    "verdict": "PASS"
   },
   "chart_quiver": {
-    "score": 48.73,
+    "score": 54.15,
     "verdict": "DOM+RENDER"
   },
   "chart_contour_and_filled": {
-    "score": 60.65,
+    "score": 82.57,
     "verdict": "DOM+RENDER"
   },
   "raster_imagesc_colorbar": {
@@ -84,8 +84,8 @@
     "verdict": "DOM+RENDER"
   },
   "plot3d_surf_mesh": {
-    "score": 72.49,
-    "verdict": "RENDER_DIFF"
+    "score": 74.4,
+    "verdict": "DOM+RENDER"
   },
   "plot3d_plot3_spiral": {
     "score": 46.67,
@@ -108,7 +108,7 @@
     "verdict": "DOM+RENDER"
   },
   "ticks_custom_format_angle": {
-    "score": 60.52,
+    "score": 80.47,
     "verdict": "DOM+RENDER"
   },
   "legend_locations_and_opts": {
@@ -120,7 +120,7 @@
     "verdict": "PASS"
   },
   "mut_live_xdata_ylim": {
-    "score": 67.77,
+    "score": 84.14,
     "verdict": "DOM+RENDER"
   },
   "mut_hold_delete_legend": {
@@ -128,7 +128,7 @@
     "verdict": "DOM+RENDER"
   },
   "mut_cla_reset_multifig": {
-    "score": 65.33,
+    "score": 85.58,
     "verdict": "DOM+RENDER"
   },
   "edge_empty_and_constant": {
