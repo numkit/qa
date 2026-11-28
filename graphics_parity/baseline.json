@@ -32,8 +32,8 @@
     "verdict": "PASS"
   },
   "line_log_scales": {
-    "score": 67.14,
-    "verdict": "DOM+RENDER"
+    "score": 90.5,
+    "verdict": "PASS"
   },
   "line_clipping_and_nan": {
     "score": 93.45,
@@ -44,8 +44,8 @@
     "verdict": "PASS"
   },
   "chart_stairs_stem": {
-    "score": 76.26,
-    "verdict": "DOM+RENDER"
+    "score": 89.95,
+    "verdict": "PASS"
   },
   "chart_scatter_varied": {
     "score": 89.94,
@@ -80,8 +80,8 @@
     "verdict": "PASS"
   },
   "raster_imshow_rgb": {
-    "score": 64.72,
-    "verdict": "DOM+RENDER"
+    "score": 97.17,
+    "verdict": "PASS"
   },
   "plot3d_surf_mesh": {
     "score": 62.74,
@@ -96,19 +96,19 @@
     "verdict": "DOM+RENDER"
   },
   "yyaxis_dual": {
-    "score": 51.17,
-    "verdict": "DOM+RENDER"
+    "score": 90.55,
+    "verdict": "PASS"
   },
   "text_cyrillic_tex_subtitle": {
     "score": 91.8,
     "verdict": "PASS"
   },
   "text_multiline_subsuper": {
-    "score": 76.28,
-    "verdict": "RENDER_DIFF"
+    "score": 90.71,
+    "verdict": "PASS"
   },
   "ticks_custom_format_angle": {
-    "score": 90.59,
+    "score": 92.56,
     "verdict": "PASS"
   },
   "legend_locations_and_opts": {
@@ -132,12 +132,12 @@
     "verdict": "PASS"
   },
   "edge_empty_and_constant": {
-    "score": 87.9,
-    "verdict": "DOM+RENDER"
+    "score": 89.89,
+    "verdict": "PASS"
   },
   "edge_log_negative": {
-    "score": 52.98,
-    "verdict": "DOM+RENDER"
+    "score": 91.67,
+    "verdict": "PASS"
   },
   "stress_100k_points": {
     "score": 90.73,
