@@ -1,0 +1,146 @@
+{
+  "layout_spanning_subplot": {
+    "score": 70.8,
+    "verdict": "DOM+RENDER"
+  },
+  "layout_tiledlayout": {
+    "score": 43.8,
+    "verdict": "DOM+RENDER"
+  },
+  "layout_manual_position": {
+    "score": 84.11,
+    "verdict": "DOM+RENDER"
+  },
+  "layout_axis_modes": {
+    "score": 72.03,
+    "verdict": "DOM+RENDER"
+  },
+  "layout_box_and_axis_off": {
+    "score": 70.13,
+    "verdict": "DOM+RENDER"
+  },
+  "layout_reverse_dirs": {
+    "score": 57.63,
+    "verdict": "DOM+RENDER"
+  },
+  "line_styles_and_colors": {
+    "score": 86.46,
+    "verdict": "DOM+RENDER"
+  },
+  "line_markers_gallery": {
+    "score": 75.16,
+    "verdict": "DOM+RENDER"
+  },
+  "line_log_scales": {
+    "score": 62.47,
+    "verdict": "DOM+RENDER"
+  },
+  "line_clipping_and_nan": {
+    "score": 87.66,
+    "verdict": "DOM+RENDER"
+  },
+  "line_xline_yline": {
+    "score": 84.94,
+    "verdict": "DOM+RENDER"
+  },
+  "chart_stairs_stem": {
+    "score": 71.92,
+    "verdict": "DOM+RENDER"
+  },
+  "chart_scatter_varied": {
+    "score": 68.79,
+    "verdict": "DOM+RENDER"
+  },
+  "chart_bar_grouped_stacked": {
+    "score": 38.21,
+    "verdict": "DOM+RENDER"
+  },
+  "chart_histogram": {
+    "score": 85.72,
+    "verdict": "DOM+RENDER"
+  },
+  "chart_area_patch": {
+    "score": 91.73,
+    "verdict": "PASS"
+  },
+  "chart_errorbar": {
+    "score": 65.89,
+    "verdict": "DOM+RENDER"
+  },
+  "chart_quiver": {
+    "score": 48.73,
+    "verdict": "DOM+RENDER"
+  },
+  "chart_contour_and_filled": {
+    "score": 60.65,
+    "verdict": "DOM+RENDER"
+  },
+  "raster_imagesc_colorbar": {
+    "score": 95.66,
+    "verdict": "DOM_ONLY"
+  },
+  "raster_imshow_rgb": {
+    "score": 79.23,
+    "verdict": "DOM+RENDER"
+  },
+  "plot3d_surf_mesh": {
+    "score": 72.49,
+    "verdict": "RENDER_DIFF"
+  },
+  "plot3d_plot3_spiral": {
+    "score": 46.67,
+    "verdict": "RENDER_DIFF"
+  },
+  "polar_plot_and_opts": {
+    "score": 62.48,
+    "verdict": "DOM+RENDER"
+  },
+  "yyaxis_dual": {
+    "score": 53.09,
+    "verdict": "DOM+RENDER"
+  },
+  "text_cyrillic_tex_subtitle": {
+    "score": 71.53,
+    "verdict": "DOM+RENDER"
+  },
+  "text_multiline_subsuper": {
+    "score": 72.3,
+    "verdict": "DOM+RENDER"
+  },
+  "ticks_custom_format_angle": {
+    "score": 60.52,
+    "verdict": "DOM+RENDER"
+  },
+  "legend_locations_and_opts": {
+    "score": 56.08,
+    "verdict": "DOM+RENDER"
+  },
+  "annotations_and_data_text": {
+    "score": 92.68,
+    "verdict": "PASS"
+  },
+  "mut_live_xdata_ylim": {
+    "score": 67.77,
+    "verdict": "DOM+RENDER"
+  },
+  "mut_hold_delete_legend": {
+    "score": 87.21,
+    "verdict": "DOM+RENDER"
+  },
+  "mut_cla_reset_multifig": {
+    "score": 65.33,
+    "verdict": "DOM+RENDER"
+  },
+  "edge_empty_and_constant": {
+    "score": 77.16,
+    "verdict": "DOM+RENDER"
+  },
+  "edge_log_negative": {
+    "score": 58.16,
+    "verdict": "DOM+RENDER"
+  },
+  "stress_100k_points": {
+    "score": 91.72,
+    "verdict": "PASS"
+  }
+}
