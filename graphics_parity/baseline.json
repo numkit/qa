@@ -12,11 +12,11 @@
     "verdict": "DOM+RENDER"
   },
   "layout_axis_modes": {
-    "score": 66.18,
-    "verdict": "DOM+RENDER"
+    "score": 75.37,
+    "verdict": "RENDER_DIFF"
   },
   "layout_box_and_axis_off": {
-    "score": 64.96,
+    "score": 66.42,
     "verdict": "DOM+RENDER"
   },
   "layout_reverse_dirs": {
@@ -68,7 +68,7 @@
     "verdict": "DOM+RENDER"
   },
   "chart_quiver": {
-    "score": 48.2,
+    "score": 83.99,
     "verdict": "DOM+RENDER"
   },
   "chart_contour_and_filled": {
@@ -80,7 +80,7 @@
     "verdict": "DOM_ONLY"
   },
   "raster_imshow_rgb": {
-    "score": 63.46,
+    "score": 64.71,
     "verdict": "DOM+RENDER"
   },
   "plot3d_surf_mesh": {
