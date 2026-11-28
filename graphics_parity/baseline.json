@@ -4,8 +4,8 @@
     "verdict": "PASS"
   },
   "layout_tiledlayout": {
-    "score": 42.1,
-    "verdict": "DOM+RENDER"
+    "score": 86.97,
+    "verdict": "RENDER_DIFF"
   },
   "layout_manual_position": {
     "score": 89.41,
@@ -28,8 +28,8 @@
     "verdict": "PASS"
   },
   "line_markers_gallery": {
-    "score": 75.31,
-    "verdict": "DOM+RENDER"
+    "score": 90.23,
+    "verdict": "PASS"
   },
   "line_log_scales": {
     "score": 67.14,
@@ -48,8 +48,8 @@
     "verdict": "DOM+RENDER"
   },
   "chart_scatter_varied": {
-    "score": 66.57,
-    "verdict": "DOM+RENDER"
+    "score": 89.94,
+    "verdict": "PASS"
   },
   "chart_bar_grouped_stacked": {
     "score": 94.1,
@@ -72,12 +72,12 @@
     "verdict": "PASS"
   },
   "chart_contour_and_filled": {
-    "score": 75.04,
-    "verdict": "DOM+RENDER"
+    "score": 88.61,
+    "verdict": "DOM_ONLY"
   },
   "raster_imagesc_colorbar": {
-    "score": 90.15,
-    "verdict": "DOM_ONLY"
+    "score": 94.14,
+    "verdict": "PASS"
   },
   "raster_imshow_rgb": {
     "score": 64.72,
@@ -112,7 +112,7 @@
     "verdict": "PASS"
   },
   "legend_locations_and_opts": {
-    "score": 74.28,
+    "score": 87.91,
     "verdict": "DOM+RENDER"
   },
   "annotations_and_data_text": {
