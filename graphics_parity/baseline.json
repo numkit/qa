@@ -1,75 +1,75 @@
 {
   "layout_spanning_subplot": {
-    "score": 64.29,
+    "score": 87.48,
     "verdict": "DOM+RENDER"
   },
   "layout_tiledlayout": {
-    "score": 40.23,
+    "score": 42.51,
     "verdict": "DOM+RENDER"
   },
   "layout_manual_position": {
-    "score": 79.92,
-    "verdict": "DOM+RENDER"
+    "score": 89.13,
+    "verdict": "PASS"
   },
   "layout_axis_modes": {
-    "score": 75.37,
-    "verdict": "RENDER_DIFF"
+    "score": 88.82,
+    "verdict": "PASS"
   },
   "layout_box_and_axis_off": {
-    "score": 66.42,
-    "verdict": "DOM+RENDER"
+    "score": 92.11,
+    "verdict": "PASS"
   },
   "layout_reverse_dirs": {
-    "score": 70.02,
-    "verdict": "DOM+RENDER"
+    "score": 88.98,
+    "verdict": "PASS"
   },
   "line_styles_and_colors": {
-    "score": 83.54,
-    "verdict": "DOM+RENDER"
+    "score": 91.62,
+    "verdict": "PASS"
   },
   "line_markers_gallery": {
-    "score": 74.36,
+    "score": 75.2,
     "verdict": "DOM+RENDER"
   },
   "line_log_scales": {
-    "score": 55.41,
+    "score": 66.86,
     "verdict": "DOM+RENDER"
   },
   "line_clipping_and_nan": {
-    "score": 85.53,
-    "verdict": "DOM+RENDER"
+    "score": 93.21,
+    "verdict": "PASS"
   },
   "line_xline_yline": {
-    "score": 81.38,
-    "verdict": "DOM+RENDER"
+    "score": 91.84,
+    "verdict": "PASS"
   },
   "chart_stairs_stem": {
-    "score": 66.85,
+    "score": 76.15,
     "verdict": "DOM+RENDER"
   },
   "chart_scatter_varied": {
-    "score": 65.24,
+    "score": 66.44,
     "verdict": "DOM+RENDER"
   },
   "chart_bar_grouped_stacked": {
-    "score": 92.81,
+    "score": 93.8,
     "verdict": "PASS"
   },
   "chart_histogram": {
-    "score": 94.74,
+    "score": 97.09,
     "verdict": "PASS"
   },
   "chart_area_patch": {
-    "score": 90.44,
+    "score": 98.15,
     "verdict": "PASS"
   },
   "chart_errorbar": {
-    "score": 86.61,
-    "verdict": "DOM+RENDER"
+    "score": 93.08,
+    "verdict": "PASS"
   },
   "chart_quiver": {
-    "score": 83.99,
-    "verdict": "DOM+RENDER"
+    "score": 91.37,
+    "verdict": "PASS"
   },
   "chart_contour_and_filled": {
     "score": 74.86,
@@ -84,63 +84,63 @@
     "verdict": "DOM+RENDER"
   },
   "plot3d_surf_mesh": {
-    "score": 63.81,
+    "score": 62.65,
     "verdict": "DOM+RENDER"
   },
   "plot3d_plot3_spiral": {
     "score": 40.57,
-    "verdict": "RENDER_DIFF"
+    "verdict": "DOM+RENDER"
   },
   "polar_plot_and_opts": {
-    "score": 57.83,
+    "score": 58.97,
     "verdict": "DOM+RENDER"
   },
   "yyaxis_dual": {
-    "score": 46.47,
+    "score": 51.05,
     "verdict": "DOM+RENDER"
   },
   "text_cyrillic_tex_subtitle": {
-    "score": 64.45,
-    "verdict": "DOM+RENDER"
+    "score": 70.66,
+    "verdict": "RENDER_DIFF"
   },
   "text_multiline_subsuper": {
-    "score": 65.13,
-    "verdict": "DOM+RENDER"
+    "score": 75.9,
+    "verdict": "RENDER_DIFF"
   },
   "ticks_custom_format_angle": {
-    "score": 77.34,
-    "verdict": "DOM+RENDER"
+    "score": 90.24,
+    "verdict": "PASS"
   },
   "legend_locations_and_opts": {
-    "score": 49.87,
+    "score": 74.07,
     "verdict": "DOM+RENDER"
   },
   "annotations_and_data_text": {
-    "score": 89.36,
+    "score": 94.38,
     "verdict": "PASS"
   },
   "mut_live_xdata_ylim": {
-    "score": 81.08,
-    "verdict": "DOM+RENDER"
+    "score": 89.73,
+    "verdict": "PASS"
   },
   "mut_hold_delete_legend": {
-    "score": 84.84,
-    "verdict": "DOM+RENDER"
+    "score": 93.01,
+    "verdict": "PASS"
   },
   "mut_cla_reset_multifig": {
-    "score": 81.65,
-    "verdict": "DOM+RENDER"
+    "score": 91.36,
+    "verdict": "PASS"
   },
   "edge_empty_and_constant": {
-    "score": 72.01,
+    "score": 87.48,
     "verdict": "DOM+RENDER"
   },
   "edge_log_negative": {
-    "score": 49.68,
+    "score": 52.81,
     "verdict": "DOM+RENDER"
   },
   "stress_100k_points": {
-    "score": 86.52,
-    "verdict": "DOM+RENDER"
+    "score": 90.54,
+    "verdict": "PASS"
   }
 }
