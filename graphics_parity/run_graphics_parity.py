@@ -320,6 +320,7 @@ def main() -> int:
             "ssim": vis.ssim if vis else 0.0,
             "ink_iou": vis.ink_iou if vis else 0.0,
             "plot_iou": vis.plot_iou if vis else 0.0,
+            "edge_iou": vis.edge_iou if vis else 0.0,
             "color_l1": vis.color_l1 if vis else 2.0,
             "bbox_diff": vis.bbox_diff if vis else 1.0,
             "pdf_iou": pdf_iou,

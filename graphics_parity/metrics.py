@@ -10,7 +10,7 @@ from typing import Any, Dict, List, Optional, Tuple
 
 import numpy as np
 from PIL import Image, ImageDraw
-from scipy.ndimage import binary_dilation, gaussian_filter, uniform_filter
+from scipy.ndimage import binary_dilation, gaussian_filter, sobel, uniform_filter
 
 
 @dataclass
@@ -19,8 +19,9 @@ class VisualMetrics:
     nk_size: Tuple[int, int]
     aspect_diff: float
     ssim: float
-    ink_iou: float          # Dilated IoU (r=2px) of non-background pixels
-    plot_iou: float         # Dilated IoU inside axes inner plot boxes only
+    ink_iou: float          # Dilated IoU (r=3px) of non-background pixels
+    plot_iou: float         # Color-aware dilated IoU inside axes inner plot boxes
+    edge_iou: float         # Dilated Sobel-edge IoU inside plot boxes (catches missing outlines)
     bbox_diff: float        # Max normalized ink bounding-box mismatch [0..1]
     color_l1: float         # L1 distance of ink color histograms [0..2] (0=identical)
     ink_ratio_ml: float     # Fraction of non-background pixels in MATLAB
@@ -189,7 +190,28 @@ def compare_images(
     ink_iou = _dilated_iou(m_ml, m_nk, radius=3)
 
     preg = _plot_region_mask((ml.shape[0], ml.shape[1]), ml_dom)
-    plot_iou = _dilated_iou(m_ml & preg, m_nk & preg, radius=3)
+    pm_ml = m_ml & preg
+    pm_nk = m_nk & preg
+    geom_plot_iou = _dilated_iou(pm_ml, pm_nk, radius=3)
+
+    # Color-consistency factor inside overlapping plot ink (penalizes wrong fills / unstacked areas).
+    both_plot = pm_ml & pm_nk
+    n_both = int(both_plot.sum())
+    if n_both > 0:
+        col_err_plot = (np.max(np.abs(ml - nk), axis=2) > 45.0) & both_plot
+        color_agree = 1.0 - float(col_err_plot.sum()) / float(n_both)
+    else:
+        color_agree = 1.0
+    plot_iou = geom_plot_iou * (0.45 + 0.55 * color_agree)
+
+    # Edge-map IoU inside plot box (detects missing bar/histogram/patch/contour outlines).
+    def _edge_mask(arr: np.ndarray) -> np.ndarray:
+        lum = 0.299 * arr[:, :, 0] + 0.587 * arr[:, :, 1] + 0.114 * arr[:, :, 2]
+        gx = sobel(lum, axis=1)
+        gy = sobel(lum, axis=0)
+        return (np.hypot(gx, gy) > 60.0) & preg
+
+    edge_iou = _dilated_iou(_edge_mask(ml), _edge_mask(nk), radius=2)
 
     bb_ml = _ink_bbox(m_ml)
     bb_nk = _ink_bbox(m_nk)
@@ -199,15 +221,16 @@ def compare_images(
     ink_ratio_ml = float(m_ml.mean())
     ink_ratio_nk = float(m_nk.mean())
 
-    # Composite [0..100] score: penalizes missing/wrong data, bad colors, bad bbox, bad aspect.
+    # Composite [0..100] score: penalizes missing/wrong data, missing outlines, bad colors, bad bbox/aspect.
     color_sim = max(0.0, 1.0 - color_l1 * 0.5)
     bbox_sim = max(0.0, 1.0 - bbox_diff * 2.5)
     aspect_sim = max(0.0, 1.0 - aspect_diff * 3.0)
     score = 100.0 * (
-        0.22 * max(0.0, ssim)
-        + 0.28 * ink_iou
-        + 0.28 * plot_iou
-        + 0.12 * color_sim
+        0.18 * max(0.0, ssim)
+        + 0.22 * ink_iou
+        + 0.26 * plot_iou
+        + 0.14 * edge_iou
+        + 0.10 * color_sim
         + 0.06 * bbox_sim
         + 0.04 * aspect_sim
     )
@@ -222,6 +245,7 @@ def compare_images(
         ssim=ssim,
         ink_iou=ink_iou,
         plot_iou=plot_iou,
+        edge_iou=edge_iou,
         bbox_diff=bbox_diff,
         color_l1=color_l1,
         ink_ratio_ml=ink_ratio_ml,
